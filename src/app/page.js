@@ -4,6 +4,7 @@ import MedicalFeatures from './Home/MedicalFeatures/MedicalFeatures'
 import Services from './Home/Services/Services'
 import Testimonials from './Home/Testimonials/Testimonials'
 import HeroSection from './Home/HeroSection/HeroSection'
+import AppointmentForm from './Home/AppointmentFAQ/AppointmentFAQ'
 
 const page = () => {
   return (
@@ -13,6 +14,7 @@ const page = () => {
       <MedicalFeatures />
       <Services />
       <Testimonials />
+      <AppointmentForm />
     </div>
   )
 }
