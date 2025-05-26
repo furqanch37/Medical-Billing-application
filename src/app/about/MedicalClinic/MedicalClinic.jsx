@@ -33,8 +33,8 @@ export default function MedicalClinic() {
 
   return (
     <div className="clinic-container">
-      <h5 className="subtitle">Professionals</h5>
-      <h2 className="title">Welcome to Medical Clinic</h2>
+      <h5 className="subtitle-1">Professionals</h5>
+      <h2 className="title-1">Welcome to Medical Clinic</h2>
       <div className="clinic-content">
         <div className="clinic-image">
           <Image src="/assets/about/2.png" alt="Clinic Building" width={500} height={300} />

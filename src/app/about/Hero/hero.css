@@ -7,7 +7,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Open Sans', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
 }
 
 .overlay {
@@ -27,24 +26,36 @@
 }
 
 .content h1 {
-  font-size: 44px;
-  margin-bottom: 20px;
-  font-weight: 300;
+     font-size: 44px;
+    font-weight: normal;
+    font-style: normal;
+    color: #ffffff;
 }
 
 .content p {
-  font-size: 15px;
   margin-bottom: 30px;
   font-weight: 100;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .btn {
-  background: white;
-  color: #003366;
-  padding: 10px 20px;
+  padding: 10px;
+  font-weight: 600;
+    font-style: normal;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #ffffff;
+    color: #3065b5;
+    border-color: #ffffff;
+    font-size: 12px;
+    text-decoration: none;
+}
+.btn:hover{
+  background-color: transparent;
+  color: #ffffff;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
 }
 
 /* Responsive - hide paragraph and button on small screens */

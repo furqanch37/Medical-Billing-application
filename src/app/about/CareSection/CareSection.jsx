@@ -23,8 +23,8 @@ const careData = [
 export default function CareSection() {
   return (
     <section className="care-section">
-      <h5 className="subtitle">Professionals</h5>
-      <h2 className="title">We Care About You</h2>
+      <h5 className="subtitle-2">Professionals</h5>
+      <h2 className="title-2">We Care About You</h2>
       <div className="care-grid">
         {careData.map((item, index) => (
           <div className="care-card" key={index}>

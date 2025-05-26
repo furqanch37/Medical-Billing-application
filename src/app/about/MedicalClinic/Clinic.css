@@ -2,22 +2,29 @@
   padding: 2rem;
   max-width: 1200px;
   margin: auto;
-  font-family: 'Open Sans', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+
 }
-.subtitle {
-  color: #27aae1;
-  font-weight: 500;
+.subtitle-1 {
+  max-width: 1200px;
   font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    color: #3eb8d7;
 }
-.title {
-  margin: 0.5rem 0 1rem;
-  font-weight: 400;
-  font-size: 44px;
+.title-1 {
+  font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    color: #232323;
+  max-width: 1200px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 .clinic-content {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  align-items: flex-start;
 }
 .clinic-image {
   flex: 1 1 45%;
@@ -33,10 +40,16 @@
   justify-content: center;
   display: flex;
   flex-direction: column;
+  font-size: 16px;
+    line-height: 22px;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    text-decoration: none;
 }
 .accordion-item {
-  border-top: 1px solid #ccc;
-  padding: 1rem 0;
+  border: 1px solid #ccc;
+  padding: 1rem;
 }
 .accordion-header {
   display: flex;

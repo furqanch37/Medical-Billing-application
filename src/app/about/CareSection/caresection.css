@@ -2,28 +2,36 @@
 
 .care-section {
   max-width: 1200px;
+  width: 100%;
   margin: auto;
-  padding: 2rem 1rem;
+  padding: 2rem;
   font-family: 'Open Sans', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
   text-align: left;
 }
 
-.subtitle {
-  color: #27aae1;
+.subtitle-2 {
+  max-width: 1200px;
+   width: 100%;
   font-size: 14px;
-  margin:0px  0px 0px 32px;
+    font-weight: normal;
+    font-style: normal;
+    color: #3eb8d7;
 }
 
-.title {
-  font-size: 2.5rem;
-  font-weight: 400;
-  margin: 10px 32px;
+.title-2 {
+   font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    color: #232323;
+  max-width: 1200px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .care-grid {
   display: flex;
   gap: 2rem;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -31,6 +39,7 @@
   background: white;
   max-width: 360px;
   text-align: left;
+  margin-bottom: 30px;
 }
 
 .image-wrapper {
@@ -40,8 +49,10 @@
 
 .care-card h4 {
   margin: 1rem 0 0.25rem;
-  font-size: 1.2rem;
+  font-size: 18px;
   color: #222;
+      font-weight: normal;
+    font-style: normal;
 }
 
 .underline {
@@ -53,7 +64,7 @@
 
 .care-card p {
   color: #555;
-  font-size: 0.95rem;
+  font-size: 13px;
   line-height: 1.6;
 }
 
