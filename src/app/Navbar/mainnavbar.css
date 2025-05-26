@@ -1,23 +1,27 @@
 .main-navbar {
+  font-family: 'Open Sans', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+  padding: 2% 10%;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Header container for logo + burger */
+.navbar-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.9% 10%;
-  font-family: 'Open Sans', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-  flex-wrap: wrap;
- box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
-        background-color: rgba(255, 255, 255, 0.1);
 }
-.flexed-div{
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
+
+/* Logo styles */
 .logo {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: white;
   font-size: 20px;
 }
 
@@ -33,25 +37,42 @@
   align-items: center;
 }
 
+/* Burger icon */
+.burger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Flex container for nav + search */
+.flexed-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+/* Links styling */
 .nav-links {
   display: flex;
-  gap: 26px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
-.nav-links .navLinkMain {
+.nav-links a {
   color: white;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
-      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-      font-style: normal;
-    text-transform: none;
 }
 
-.nav-links .navLinkMain:hover {
+.nav-links a:hover {
   text-decoration: underline;
 }
+
+/* Search button */
 .search button {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -68,21 +89,34 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .main-navbar {
+  .burger {
+    display: block;
+  }
+
+  .flexed-div {
+    display: none;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 20px 0px;
+    align-items: flex-start;
+    margin-top: 10px;
+    gap: 15px;
+  }
+
+  .flexed-div.show {
+    display: flex;
   }
 
   .nav-links {
     flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
   }
 
   .search {
-    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
   }
 }
