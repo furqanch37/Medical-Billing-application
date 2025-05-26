@@ -1,0 +1,122 @@
+/* Global container */
+.doctors-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+   font-family: 'Open Sans', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+}
+
+/* Section title and subtitle */
+.subtitle {
+  color: #007acc;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+/* Grid layout */
+.doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* Card */
+.doctor-card-1 {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Image section */
+.doctor-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Content */
+.doctor-details {
+  padding: 15px;
+  text-align: center;
+}
+
+.doctor-details h3 {
+  color: #2a5dab;
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.specialty {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Contact info */
+.contact-info {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.icon {
+  margin-right: 8px;
+  color: #007acc;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .doctor-details h3 {
+    font-size: 16px;
+  }
+
+  .desc {
+    font-size: 0.9rem;
+  }
+
+  .doctor-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .doctors-section {
+    padding: 30px 10px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .doctor-details {
+    padding: 12px;
+  }
+
+  .desc,
+  .contact-info {
+    font-size: 0.85rem;
+  }
+}

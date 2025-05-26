@@ -1,0 +1,65 @@
+.team-section {
+  position: relative;
+  background-image: url('/assets/doctors/3.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+  font-family: 'Open Sans', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+}
+
+.team-content {
+  max-width: 600px;
+  z-index: 2;
+    margin-left: 9%;
+}
+
+.team-content h1 {
+    font-size: 44px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.team-content p {
+font-size: 15px;
+  margin-bottom: 30px;
+  font-weight: 100;
+}
+
+.team-btn {
+  background-color: white;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #036;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px
+}
+
+.team-btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .team-content h1 {
+    font-size: 2rem;
+  }
+
+  .team-content p {
+    font-size: 1rem;
+  }
+
+  .team-section {
+    padding: 60px 15px;
+    text-align: center;
+    justify-content: center;
+  }
+}
