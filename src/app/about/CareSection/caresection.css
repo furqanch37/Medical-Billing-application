@@ -1,0 +1,76 @@
+/* CareSection.css */
+
+.care-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+  font-family: 'Open Sans', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+  text-align: left;
+}
+
+.subtitle {
+  color: #27aae1;
+  font-size: 14px;
+  margin:0px  0px 0px 32px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 10px 32px;
+}
+
+.care-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.care-card {
+  background: white;
+  max-width: 360px;
+  text-align: left;
+}
+
+.image-wrapper {
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.care-card h4 {
+  margin: 1rem 0 0.25rem;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.underline {
+  width: 40px;
+  height: 2px;
+  background: #27aae1;
+  margin-bottom: 0.8rem;
+}
+
+.care-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .title{
+        margin: 10px 0px ;
+    }
+    .subtitle{
+        margin: 0px;
+    }
+  .care-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .care-card {
+    width: 100%;
+  }
+}

@@ -1,0 +1,56 @@
+.hero {
+  background-image: url('/assets/about/1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.content {
+  color: white;
+  max-width: 600px;
+  padding: 20px;
+ 
+}
+
+.content h1 {
+  font-size: 44px;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.content p {
+  font-size: 15px;
+  margin-bottom: 30px;
+  font-weight: 100;
+}
+
+.btn {
+  background: white;
+  color: #003366;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Responsive - hide paragraph and button on small screens */
+@media (max-width: 768px) {
+
+  .content h1 {
+    font-size: 1.8rem;
+  }
+}
