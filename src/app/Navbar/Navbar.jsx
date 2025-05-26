@@ -1,12 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './mainnavbar.css';
-import { FaSearch, FaBars, FaTimes } from 'react-icons/fa';
+import { FaSearch } from 'react-icons/fa';
+import Link from 'next/link';
 
 const MainNavbar = ({ scrolled }) => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => setMenuOpen(!menuOpen);
-
   return (
     <div className={`main-navbar ${scrolled ? "scrolled-bg" : ""}`}>
       <div className="logo">
@@ -14,25 +11,22 @@ const MainNavbar = ({ scrolled }) => {
         <span className="brand"><strong>Care</strong>Watch</span>
       </div>
 
-      {/* Burger Icon */}
-      <div className="burger-icon" onClick={toggleMenu}>
-        {menuOpen ? <FaTimes /> : <FaBars />}
-      </div>
-
-      <div className={`flexed-div ${menuOpen ? "show-menu" : ""}`}>
+    <div className='flexed-div'>
         <div className="nav-links">
-          <a href="#">Home</a>
-          <a href="#">Departments</a>
-          <a href="#">Timetable</a>
-          <a href="#">Features</a>
-          <a href="#">Shortcodes</a>
-          <a href="#">Post Types</a>
-        </div>
-
-        <div className="search">
-          <button><FaSearch /></button>
-        </div>
+        <Link href="/" className='navLinkMain'>Home</Link>
+        <Link href="/about" className='navLinkMain'>About</Link>
+        <Link href="/ServicesPage" className='navLinkMain'>Services</Link>
+        <Link href="/doctors" className='navLinkMain'>Doctors</Link>
+        <Link href="/" className='navLinkMain'>Features</Link>
+        <Link href="/contact" className='navLinkMain'>Contact</Link>
       </div>
+
+      <div className="search">
+        <button>
+          <FaSearch />
+        </button>
+      </div>
+    </div>
     </div>
   );
 };

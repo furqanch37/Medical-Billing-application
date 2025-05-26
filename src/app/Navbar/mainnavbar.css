@@ -2,20 +2,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2% 10%;
+  padding: 1.9% 10%;
   font-family: 'Open Sans', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
   flex-wrap: wrap;
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 0.1);
-  position: relative;
+ box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+        background-color: rgba(255, 255, 255, 0.1);
 }
-
-.flexed-div {
+.flexed-div{
   display: flex;
   align-items: center;
   gap: 30px;
 }
-
 .logo {
   display: flex;
   align-items: center;
@@ -38,21 +35,23 @@
 
 .nav-links {
   display: flex;
-  gap: 30px;
+  gap: 26px;
   flex-wrap: wrap;
 }
 
-.nav-links a {
+.nav-links .navLinkMain {
   color: white;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+      font-style: normal;
+    text-transform: none;
 }
 
-.nav-links a:hover {
+.nav-links .navLinkMain:hover {
   text-decoration: underline;
 }
-
 .search button {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -67,54 +66,23 @@
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* NEW: Burger Icon */
-.burger-icon {
-  display: none;
-  font-size: 24px;
-  color: white;
-  cursor: pointer;
-}
-
 /* Responsive */
 @media (max-width: 768px) {
-  .burger-icon {
-    display: block;
-    position: absolute;
-    right: 30px;
-    top: 22px;
-    z-index: 11;
-  }
-
-  .flexed-div {
-    display: none;
+  .main-navbar {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    width: 100%;
-    margin-top: 20px;
-  }
-
-  .flexed-div.show-menu {
-    display: flex;
+    gap: 10px;
+    padding: 20px 0px;
   }
 
   .nav-links {
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
+    justify-content: center;
     align-items: center;
   }
 
-  .nav-links a {
-    font-size: 16px;
-  }
-
   .search {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .search button {
-    margin-top: 10px;
+    align-items: center;
   }
 }
