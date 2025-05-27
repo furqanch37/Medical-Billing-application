@@ -34,9 +34,9 @@
 
 .content p {
   margin-bottom: 30px;
-  font-weight: 100;
+  font-weight: normal;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 15px;
+  font-size: 14px;
   line-height: 20px;
 }
 
