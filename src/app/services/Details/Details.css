@@ -122,20 +122,26 @@
 }
 
 .content h2 {
-  font-size: 24px;
   margin-bottom: 10px;
+  font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    color: #3065b5;
 }
 
 .content p {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.6;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #787878;
 }
 .services-grid {
   display: flex;
   justify-content: space-between;
   gap: 60px;
   margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .services-card {
@@ -146,11 +152,15 @@
 }
 
 .services-card h4 {
-  font-size: 20px;
   margin-bottom: 24px;
   position: relative;
   padding-bottom: 6px;
-  display: inline-block;
+      font-size: 24px;
+    line-height: 30px;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    text-decoration: none;
 }
 .services-card h4::after{
   content: '';
@@ -174,6 +184,10 @@
   margin-bottom: 10px;
   padding-left: 16px;
   position: relative;
+  font-size: 13px;
+    line-height: 20px;
+    font-weight: normal;
+    font-style: normal;
 }
 
 .services-card ul li::before {
