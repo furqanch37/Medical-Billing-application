@@ -20,21 +20,45 @@
 
 .sidebar-section.department {
   background-color: #005ca8;
+ font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    text-decoration: none;
 }
 
 .sidebar-section.hours {
   background-color: #118bdc;
+      font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    text-decoration: none;
 }
 
 .sidebar-section.contact {
   background-color: #28b2e2;
+      font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    text-decoration: none;
 }
 
 .sidebar-section h3 {
   margin-bottom: 15px;
-  font-size: 16px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+  padding-top: 13px;
+      font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    text-decoration: none;
 }
 
 .sidebar-section ul {
@@ -47,11 +71,24 @@
   margin-bottom: 10px;
   font-size: 14px;
   cursor: pointer;
+    line-height: 24px;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    text-decoration: none;
 }
 
 .sidebar-section ul li.active {
-  font-weight: bold;
   text-decoration: underline;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 20px;
+      font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    text-decoration: none;
 }
 
 .sidebar-section ul li span {
@@ -64,6 +101,13 @@
   display: flex;
   align-items: center;
   gap:10px;
+    margin-bottom: 10px;
+  cursor: pointer;
+    line-height: 24px;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    text-decoration: none;
 }
 
 .content {
