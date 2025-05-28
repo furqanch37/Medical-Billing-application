@@ -1,8 +1,14 @@
+"use client";
+
 import React from 'react';
 import './Footer.css';
 import { FaMapMarkerAlt, FaGlobe, FaEnvelope, FaPhone } from 'react-icons/fa';
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <footer className="footer">
       <div className="footer-top">
@@ -50,15 +56,15 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <p>
-          <a href="#">Privacy Policy</a> / This is a sample website - cmsmasters © 2025 / All Rights Reserved
+          CareWatch - © 2025 / All Rights Reserved
         </p>
         <div className="footer-links">
-          <a href="#">About the company</a>
+          <a href="/about">About</a>
           <span>|</span>
-          <a href="#">Contact us</a>
+          <a href="/contact">Contact us</a>
         </div>
         <div className="scroll-top">
-          <button>&uarr;</button>
+          <button onClick={scrollToTop} aria-label="Scroll to top">&uarr;</button>
         </div>
       </div>
     </footer>
