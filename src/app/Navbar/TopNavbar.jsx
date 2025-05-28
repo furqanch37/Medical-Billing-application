@@ -8,6 +8,7 @@ import {
   FaYoutube,
   FaChevronDown,
 } from 'react-icons/fa';
+import Link from 'next/link';
 
 const TopHeader = () => {
   const [showDetails, setShowDetails] = useState(false);
@@ -27,6 +28,9 @@ const TopHeader = () => {
     setShowDetails(!showDetails);
   };
 
+  // Optional: dummy closeMenu if needed for now
+  const closeMenu = () => setShowDetails(false);
+
   return (
     <div className="top-header">
       {isMobile && (
@@ -36,9 +40,15 @@ const TopHeader = () => {
       )}
 
       <div className={`left ${isMobile && !showDetails ? 'hidden' : ''}`}>
-        <a href="#">FAQ</a>
-        <a href="#">Book Appointment</a>
-        <a href="#">Contacts</a>
+        <Link href="/#appointment" className="navLinkMain" onClick={closeMenu}>
+          Faqs
+        </Link>
+        <Link href="/contact" className="navLinkMain" onClick={closeMenu}>
+          Book an Appointment
+        </Link>
+        <Link href="/contact" className="navLinkMain" onClick={closeMenu}>
+          Contact
+        </Link>
         <span className="email">example@example.com</span>
       </div>
 
