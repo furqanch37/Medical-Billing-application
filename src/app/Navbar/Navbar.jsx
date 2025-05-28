@@ -27,7 +27,10 @@ const MainNavbar = ({ scrolled }) => {
           <Link href="/ServicesPage" className='navLinkMain' onClick={closeMenu}>Services</Link>
           <Link href="/doctors" className='navLinkMain' onClick={closeMenu}>Doctors</Link>
           <Link href="/" className='navLinkMain' onClick={closeMenu}>Features</Link>
-          <Link href="/" className='navLinkMain' onClick={closeMenu}>Faqs</Link>
+          <Link href="/#appointment" className="navLinkMain" onClick={closeMenu}>
+  Faqs
+</Link>
+
           <Link href="/contact" className='navLinkMain' onClick={closeMenu}>Contact</Link>
         </div>
         <div className="search">
