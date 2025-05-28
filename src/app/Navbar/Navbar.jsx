@@ -31,10 +31,10 @@ const MainNavbar = ({ scrolled }) => {
   Faqs
 </Link>
 
-          <Link href="/contact" className='navLinkMain' onClick={closeMenu}>Contact</Link>
+          
         </div>
         <div className="search">
-          <button><FaSearch /></button>
+          <button><Link href="/contact" className='navLinkMain' onClick={closeMenu}>Contact</Link></button>
         </div>
       </div>
     </div>
