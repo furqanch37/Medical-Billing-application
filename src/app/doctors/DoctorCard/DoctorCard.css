@@ -1,10 +1,12 @@
 /* Global container */
+body{
+  overflow-x: hidden;
+}
 .doctors-section {
   padding: 20px 20px;
   max-width: 1200px;
   margin: 10px auto;
  padding-bottom: 90px;
-   font-family: 'Open Sans', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
 }
 
 /* Section title and subtitle */
@@ -113,7 +115,6 @@
   margin-right: 12px;
   color: #007acc;
 }
-
 /* Mobile styles */
 @media (max-width: 768px) {
   .title {
@@ -132,12 +133,17 @@
   .doctor-grid {
     gap: 20px;
   }
+  .doctor-image {
+  object-position:center;
+  object-fit: cover;
+}
+
 }
 
 @media (max-width: 480px) {
-  .doctors-section {
+  /* .doctors-section {
     padding: 30px 10px;
-  }
+  } */
 
   .title {
     font-size: 22px;

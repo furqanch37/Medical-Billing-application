@@ -7,7 +7,7 @@ const DoctorCard = ({ image, name, specialty, phone, email }) => {
   return (
     <div className="doctor-card-1">
       <div className="doctor-image">
-        <Image src={image} alt={name} width={300} height={200} style={{objectFit:"cover", objectPosition:"top"}} />
+        <Image src={image} alt={name} width={300} height={200} style={{objectFit:"cover", width:"100%", objectPosition:"top"}} />
       </div>
       <div className="doctor-details">
         <h3>{name}</h3>

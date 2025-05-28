@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 .team-section {
   position: relative;
   background-image: url('/assets/doctors/3.jpg');

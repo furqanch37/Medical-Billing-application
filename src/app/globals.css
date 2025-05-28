@@ -7,7 +7,7 @@
   font-family: 'Open Sans', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
 }
 body{
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 .topHeaderWrapper {
   width: 100%;
