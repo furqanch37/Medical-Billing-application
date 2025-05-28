@@ -1,8 +1,34 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import { FaChevronDown } from 'react-icons/fa';
 import "./AppointmentFAQ.css";
 
 const AppointmentForm = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
+  const faqs = [
+    {
+      question: "What are your regular office hours?",
+      answer: "Our office hours are Monday to Friday from 8:00 AM to 6:00 PM EST. For urgent billing inquiries, support is available 24/7."
+    },
+    {
+      question: "What is your appointment policy?",
+      answer: "You can book appointments online or by calling us. We recommend booking in advance for personalized support sessions."
+    },
+    {
+      question: "What should I do if I’m ill?",
+      answer: "Reach out to your healthcare provider. For insurance or billing concerns related to your treatment, CareWatch is ready to assist."
+    },
+    {
+      question: "How do I get a refill on my prescription?",
+      answer: "Request a refill via your healthcare provider. For billing-related questions, our consultants are here to help."
+    },
+  ];
+
   return (
     <div className="appointment-container">
       <div className="form-section">
@@ -37,10 +63,14 @@ const AppointmentForm = () => {
       <div className="faq-section">
         <h2 className="faq-title">FAQ</h2>
         <h3 className='faq-title-1'>Have some Questions?</h3>
-        <div className="faq-item">What are your regular office hours? <span>+</span></div>
-        <div className="faq-item">What is your appointment policy? <span>+</span></div>
-        <div className="faq-item">What should I do if I’m ill? <span>+</span></div>
-        <div className="faq-item">How do I get a refill on my prescription? <span>+</span></div>
+        {faqs.map((faq, index) => (
+          <div key={index} className="faq-item" onClick={() => toggleFAQ(index)}>
+            {faq.question} <span>{activeIndex === index ? '-' : '+'}</span>
+            {activeIndex === index && (
+              <div className="faq-answer">{faq.answer}</div>
+            )}
+          </div>
+        ))}
       </div>
     </div>
   );

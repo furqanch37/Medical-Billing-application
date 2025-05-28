@@ -9,13 +9,13 @@ const ContactBanner = () => {
       <div className="contact-form-container">
         <h2>Book an Appointment</h2>
         <div className="form-row">
-          <div className="custom-select">
+          <div className="custom-select-contact">
             <select>
               <option>Select Departments</option>
             </select>
             <FaChevronDown className="dropdown-icon" />
           </div>
-          <div className="custom-select">
+          <div className="custom-select-contact">
             <select>
               <option>Select Doctors</option>
             </select>

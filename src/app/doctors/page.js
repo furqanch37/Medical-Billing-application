@@ -6,7 +6,7 @@ import TeamSection from "./TeamSection/TeamSection";
 
 export default function doctor() {
   return (
-    <div>
+    <div style={{backgroundColor: '#fcfcfc'}}>
       <TeamSection />
       <DoctorProfile/>
       <DoctorList/>

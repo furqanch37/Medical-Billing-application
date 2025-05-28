@@ -13,34 +13,42 @@
 }
 
 .team-content {
-  max-width: 600px;
+  max-width: 550px;
   z-index: 2;
     margin-left: 9%;
+    margin-top: 70px;
 }
 
 .team-content h1 {
-    font-size: 44px;
-    margin-bottom: 20px;
-    font-weight: 300;
+   font-size: 44px;
+    line-height: 50px;
+    font-weight: normal;
+    font-style: normal;
+    color: #ffffff;
 }
 
 .team-content p {
-font-size: 15px;
-  margin-bottom: 30px;
-  font-weight: 100;
+color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 45px;
+  line-height: 20px;
+    font-weight: normal;
+    font-style: normal;
 }
 
 .team-btn {
   background-color: white;
-  font-size: 1rem;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  color: #036;
-  padding: 10px 20px;
+      color: #3065b5;
+  padding: 2px 20px;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px
+ font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 42px;
 }
 
 .team-btn:hover {

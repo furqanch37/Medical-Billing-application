@@ -11,20 +11,20 @@ const DoctorProfile = () => {
 
       <div className="doctor-card">
         <div className="doctor-img">
-          <Image src="/assets/doctors/chief.jpg" alt="Dr. Nick Sims" width={180} height={180} />
+          <Image src="/assets/doctors/chief.jpg" alt="Dr. Nick Sims" width={220} height={220} />
         </div>
         <div className="doctor-info">
           <div className="doctor-header">
             <div>
               <h2>Dr. Nick Sims</h2>
-              <p className="specialty">Gynecologist</p>
+              <p className="specialty specialtyOne">Gynecologist</p>
             </div>
             <div className="doctor-contact">
               <p><FaPhoneAlt className="icon" /> +1-212-555-7575</p>
               <p><FaEnvelope className="icon" /> example@example.com</p>
             </div>
           </div>
-          <hr />
+          <div className='lineInCard'></div>
           <p className="doctor-bio">
             Etiam eu molestie eros, commodo hendrerit sapien. Maecenas tempus leo ac nisi iaculis porta. Sed sapien tortor, aliquet a velit ut, 
             lacinia molestie velit. Maecenas ornare consequat massa ullamcorper dapibus. Etiam eu molestie eros, commodo hendrerit sapien. 

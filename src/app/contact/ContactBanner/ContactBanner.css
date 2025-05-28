@@ -22,7 +22,10 @@
 
 .contact-form-container h2 {
   margin-bottom: 30px;
-  font-size: 28px;
+ font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    color: #ffffff;
 }
 
 .form-row {
@@ -31,39 +34,43 @@
   margin-bottom: 20px;
 }
 
-.custom-select {
+.custom-select-contact {
   position: relative;
   flex: 1;
 }
 
-.custom-select select {
+.custom-select-contact select {
   width: 100%;
-  padding: 10px;
+     padding: 10px;
   appearance: none;
   background-color: #4d81d1;
   border: 1px solid #ccc;
   color: white;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .dropdown-icon {
   position: absolute;
-  right: 15px;
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
-  color: white;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 input[type="text"],
 input[type="email"],
 input[type="date"] {
   flex: 1;
-  padding: 10px;
-  background-color: #4d81d1;
-  border: 1px solid #ccc;
+      padding: 10px;
+ background-color: rgba(255, 255, 255, .2);
+  border: 1px solid rgba(255, 255, 255, .5);
   color: white;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 input::placeholder {
@@ -76,14 +83,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .appointment-button {
   margin-top: 20px;
-  padding: 15px;
-  background-color: transparent;
-  border: 1px solid white;
+  padding: 10px;
+ background-color: rgba(255, 255, 255, .0);
+  border: 1px solid rgba(255, 255, 255, .5);
   color: white;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: 600;
   cursor: pointer;
   transition: background 0.3s;
+  width: 40%;
 }
 
 .appointment-button:hover {

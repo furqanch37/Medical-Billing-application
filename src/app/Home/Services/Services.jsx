@@ -49,7 +49,7 @@ const Services = () => {
   return (
     <section className="services-section">
       <div className="departments-panel">
-        <h2>Departments</h2>
+       <div> <h2>Departments</h2>
         <ul>
           <li>Outpatient Surgery</li>
           <li>Cardiac Clinic</li>
@@ -59,7 +59,7 @@ const Services = () => {
           <li>Laryngological Clinic</li>
           <li>Pediatric Clinic</li>
         </ul>
-        <a href="#">View all</a>
+        <a href="#">View all</a></div>
       </div>
 
       <div className="services-content">

@@ -2,19 +2,26 @@
   display: flex;
   background: #fff;
   padding: 40px 10%;
+margin-bottom: 60px;
+margin-top: 35px;
 }
 
 .departments-panel {
   width: 250px;
   background: #2f65b8;
   color: white;
-  padding: 30px 20px;
-  flex-shrink: 0;
+  padding: 35px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
 
 .departments-panel h2 {
-  font-size: 22px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    color: #ffffff;
 }
 
 .departments-panel ul {
@@ -24,15 +31,21 @@
 }
 
 .departments-panel li {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   cursor: pointer;
+   font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    color: #b5cbed;
 }
 
 .departments-panel a {
-  color: white;
-  font-weight: bold;
   display: inline-block;
   margin-top: 20px;
+ font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    color: #ffffff;
 }
 
 .services-content {
@@ -49,13 +62,19 @@
 }
 
 .title-group .tag {
-  color: #2f9ecf;
-  font-weight: bold;
+  font-weight: normal;
+    font-style: normal;
+    color: #3eb8d7;
+    font-size: 14px;
 }
 
 .title-group h2 {
-  font-size: 26px;
   margin: 5px 0 0;
+
+  font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    color: #232323;
 }
 
 .scroll-buttons {
@@ -116,18 +135,23 @@
 }
 
 .service-card h3 {
-  color: #2f65b8;
+    color: #3065b5;
   font-size: 18px;
-  margin: 15px 10px 10px;
+  margin: 15px 10px 15px;
+  font-weight: normal;
 }
 
 .service-card p {
-  font-size: 14px;
-  color: #444;
+    color: #787878;
   padding: 0 10px 15px;
-  border-top: 1px solid #eee;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   margin: 0 10px;
-  padding-top: 10px;
+  padding-top: 15px;
+
+      font-size: 13px;
+    line-height: 20px;
+    font-weight: normal;
+    font-style: normal;
 }
 @media (max-width: 768px) {
   .services-section {

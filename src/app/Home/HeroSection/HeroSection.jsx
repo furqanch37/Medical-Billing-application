@@ -6,14 +6,15 @@ const HeroSection = () => {
     <div className="hero-section">
       <div className="hero-overlay">
         <div className="hero-content">
-          <p className="hero-subtitle">Entrust your health our doctors</p>
+          <p className="hero-subtitle">Professional Medical Billing Experts</p>
           <h1 className="hero-title">
-            Medical services that<br />
-            you can trust
+            Get Paid Faster. Focus on<br />
+            What Truly Matters — Patient Care
           </h1>
+       
           <div className="hero-buttons">
-            <button className="hero-btn filled">Make an Appointment</button>
-            <button className="hero-btn outlined">View Departments</button>
+            <button className="hero-btn filled">Get a Free Consultation</button>
+            <button className="hero-btn outlined">Explore Our Services</button>
           </div>
         </div>
       </div>

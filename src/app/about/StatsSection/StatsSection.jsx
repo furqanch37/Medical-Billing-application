@@ -6,11 +6,11 @@ import { BsCalendar3 } from "react-icons/bs";
 import './StatsSections.css';
 
 const stats = [
-  { icon: <FaThumbsUp />, value: 100, suffix: "%", label: "Quality" },
-  { icon: <GiRibbonMedal />, value: 2480, label: "Health Departments" },
-  { icon: <FaUserFriends />, value: 26, label: "People working" },
-  { icon: <BsCalendar3 />, value: 38, label: "Years of experience" },
-  { icon: <FaRegSmile />, value: 7856, label: "Happy Smiles" },
+  { icon: <FaThumbsUp />, value: 99, suffix: "%", label: "Client Satisfaction" },
+  { icon: <GiRibbonMedal />, value: 1200, label: "Claims Processed Monthly" },
+  { icon: <FaUserFriends />, value: 40, label: "Expert Team Members" },
+  { icon: <BsCalendar3 />, value: 12, label: "Years in Medical Billing" },
+  { icon: <FaRegSmile />, value: 3200, label: "Providers Supported" },
 ];
 
 function useCounterAnimation(endValue, duration = 1000) {
@@ -18,7 +18,7 @@ function useCounterAnimation(endValue, duration = 1000) {
 
   useEffect(() => {
     let start = 0;
-    const step = Math.ceil(endValue / (duration / 30)); // update every 30ms
+    const step = Math.ceil(endValue / (duration / 30));
     const interval = setInterval(() => {
       start += step;
       if (start >= endValue) {

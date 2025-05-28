@@ -12,6 +12,7 @@ const page = () => {
       <HeroSection />
       <InfoSection />
       <MedicalFeatures />
+      <div className='line'></div>
       <Services />
       <Testimonials />
       <AppointmentForm />

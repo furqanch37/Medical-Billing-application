@@ -6,53 +6,43 @@ const Details = () => {
     <div className="outpatient-container">
       <ServicesSidebar />
       <div className="content">
-        <img src="/assets/services/one.jpg" alt="Surgery" className="top-image" />
-        <h2>Outpatient Surgery</h2>
+        <img src="/assets/services/one.jpg" alt="Medical Billing Services" className="top-image" />
+        <h2>Medical Billing & Consultancy</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fermentum massa vel enim feugiat gravida.
-          Phasellus vel risus euismod, luctus ex eget, malesuada augue. Vivamus fermentum ut ex quis imperdiet sodales.
-          Sed aliquam nibh nibh, a rutrum turpis pellentesque a. Nulla nibh libero, tincidunt cursus urna sed, suscipit
-          imperdiet eros. Sed sodales libero sapien, at rutrum mi placerat eget. Nulla vestibulum lectus vel eros eleifend
-          malesuada. Cras dapibus ullamcorper dictum. Vivamus nec erat placerat felis scelerisque porttitor ut in turpis.
+          At CareWatch, we provide comprehensive medical billing and consultancy services tailored to optimize your practice's revenue cycle.
+          Our expert team handles everything from claims processing to regulatory compliance, ensuring your operations run smoothly and efficiently.
         </p>
         <p>
-          In nec imperdiet turpis. Suspendisse quis orci ac orci pulvinar eleifend. Nullam vitae quam risus. Integer eget
-          sagittis nulla. Praesent consectetur lacus ex mauris eleifend. Integer non lacus eu. Mauris tortor lorem, laoreet
-          quis commodo vitae, sodales vel augue.
+          We understand the complexities of healthcare administration and are dedicated to providing customized solutions that reduce administrative burden,
+          improve cash flow, and enhance patient satisfaction. Partner with us for trusted expertise and dedicated support.
         </p>
 
         <div className="services-grid">
           <div className="services-card">
-            <h4>Investigations</h4>
+            <h4>Billing Services</h4>
             <ul>
-              <li>Colonoscopy – $105</li>
-              <li>Gastroscopy – $225</li>
-              <li>Gastroscopy – $225</li>
-              <li>Colonoscopy – $105</li>
-              <li>Colonoscopy – $105</li>
-              <li>Allergy testing – $355</li>
+              <li>Claims Submission & Follow-up</li>
+              <li>Denial Management & Appeals</li>
+              <li>Patient Eligibility Verification</li>
+              <li>Accounts Receivable Management</li>
             </ul>
           </div>
           <div className="services-card">
-            <h4>Treatments</h4>
+            <h4>Consultancy</h4>
             <ul>
-              <li>Colonoscopy – $105</li>
-              <li>Gastroscopy – $225</li>
-              <li>Gastroscopy – $225</li>
-              <li>Colonoscopy – $105</li>
-              <li>Colonoscopy – $105</li>
-              <li>Allergy testing – $355</li>
+              <li>Revenue Cycle Optimization</li>
+              <li>Practice Management Solutions</li>
+              <li>Compliance & Regulatory Guidance</li>
+              <li>Coding & Documentation Training</li>
             </ul>
           </div>
           <div className="services-card">
-            <h4>Our Services</h4>
+            <h4>Additional Services</h4>
             <ul>
-              <li>Colonoscopy – $105</li>
-              <li>Gastroscopy – $225</li>
-              <li>Gastroscopy – $225</li>
-              <li>Colonoscopy – $105</li>
-              <li>Colonoscopy – $105</li>
-              <li>Allergy testing – $355</li>
+              <li>Patient Billing & Collections</li>
+              <li>Financial Reporting & Analytics</li>
+              <li>Insurance Contract Negotiation</li>
+              <li>Custom Software Integration</li>
             </ul>
           </div>
         </div>

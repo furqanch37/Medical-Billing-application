@@ -4,19 +4,19 @@ import "./caresection.css";
 
 const careData = [
   {
-    title: "Embrace your Health",
+    title: "Streamlined Medical Billing",
     image: "/assets/about/clinic1.jpg",
-    description: `It is a long established fact that a reader will be distracted by the readable content...`,
+    description: `We simplify the complex world of medical billing to ensure your practice gets paid faster with fewer denials and errors.`,
   },
   {
-    title: "Primary Health Care",
+    title: "Customized Healthcare Solutions",
     image: "/assets/about/clinic2.jpg",
-    description: `It is a long established fact that a reader will be distracted by the readable content...`,
+    description: `Every practice is different. We tailor our billing and consultancy services to match your unique workflows and specialties.`,
   },
   {
-    title: "Achieving Better Health Care",
+    title: "Compliance & Support You Can Trust",
     image: "/assets/about/clinic3.jpg",
-    description: `It is a long established fact that a reader will be distracted by the readable content...`,
+    description: `Stay compliant with the latest medical billing regulations while getting dedicated support for audits, insurance, and patient queries.`,
   },
 ];
 
