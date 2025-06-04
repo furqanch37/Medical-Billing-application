@@ -1,0 +1,57 @@
+.billing-specialties-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.billing-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0077c8;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.billing-subtitle {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.billing-highlight {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.billing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.billing-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.billing-item:hover {
+  background-color: #eaf6ff;
+}
+
+.billing-label p{
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+}
+
+.billing-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}

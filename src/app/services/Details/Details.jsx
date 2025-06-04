@@ -3,6 +3,7 @@
 import { useSearchParams } from 'next/navigation';
 import './Details.css';
 import ServicesSidebar from './ServicesSidebar';
+import BillingSpecialties from '../servicecetagory/billing-specialities';
 
 const servicesDetails = [
   {
@@ -182,7 +183,9 @@ export default function Details() {
             </ul>
           </div>
         </div>
+             <BillingSpecialties/>
       </div>
+ 
     </div>
   );
 }
