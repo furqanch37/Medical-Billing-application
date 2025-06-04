@@ -58,12 +58,11 @@
   padding: 0.75rem 1.5rem;
   border-radius: 6px;
   text-decoration: none;
-  font-weight: bold;
   transition: background 0.3s ease;
 }
 
 .billing-button:hover {
-  background: #2a8b00;
+  background: #3065b5;
 }
 
 /* Responsive */
