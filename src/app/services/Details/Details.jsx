@@ -4,6 +4,7 @@ import { useSearchParams } from 'next/navigation';
 import './Details.css';
 import ServicesSidebar from './ServicesSidebar';
 import BillingSpecialties from '../servicecetagory/billing-specialities';
+import PatientSchedulingBanner from '../patientScheduling/patientscheduling';
 
 const servicesDetails = [
   {
@@ -170,7 +171,7 @@ export default function Details() {
         <img src={service.image} alt={service.title} className="top-image" />
         <h2>{service.title}</h2>
         {service.description.map((para, idx) => (
-          <p key={idx}>{para}</p>
+          <p className="content-1" key={idx}>{para}</p>
         ))}
 
         <div className="services-grid">
@@ -183,6 +184,7 @@ export default function Details() {
             </ul>
           </div>
         </div>
+              <PatientSchedulingBanner/>
              <BillingSpecialties/>
       </div>
  

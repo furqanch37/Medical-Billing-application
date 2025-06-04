@@ -1,5 +1,4 @@
 .billing-specialties-container {
-  padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -7,20 +6,17 @@
 .billing-title {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #0077c8;
+  color: rgb(48, 101, 181);
   margin-bottom: 0.5rem;
-  text-align: center;
 }
 
 .billing-subtitle {
   font-size: 1rem;
-  text-align: center;
   margin-bottom: 0.5rem;
 }
 
 .billing-highlight {
   font-weight: bold;
-  text-align: center;
   margin-bottom: 2rem;
 }
 
@@ -35,7 +31,6 @@
   align-items: center;
   gap: 0.75rem;
   padding: 0.5rem;
-  background-color: #f9f9f9;
   border-radius: 8px;
   transition: background-color 0.3s ease;
 }
@@ -44,7 +39,7 @@
   background-color: #eaf6ff;
 }
 
-.billing-label p{
+.billing-label{
   font-size: 13px;
   display: flex;
   justify-content: center;

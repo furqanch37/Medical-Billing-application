@@ -31,13 +31,13 @@ const BillingSpecialties = () => {
   return (
     <div className="billing-specialties-container">
       <h2 className="billing-title">
-        Discover the Top Specialties Where Our Expert Team Collaborates with Healthcare Physicians Across the U.S.
+        Explore the Medical Specialties We Support with Expert Billing Services
       </h2>
       <p className="billing-subtitle">
-        Our Expert Team Brings Advanced Skills to Enhance the Accuracy and Efficiency of Your Prior Authorization Services.
+        Our Experienced Team Delivers Accurate, Efficient Prior Authorization Across a Range of Specialties
       </p>
       <p className="billing-highlight">
-        Looking for Reliable Prior Authorization Services? Contact Us Today and Discover How We Can Streamline Your Workflow
+        Need Reliable Prior Authorization Support? Contact Us to Streamline Your Medical Billing Workflow
       </p>
       <div className="billing-grid">
         {specialties.map((item, index) => (
