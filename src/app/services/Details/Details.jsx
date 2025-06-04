@@ -5,6 +5,7 @@ import './Details.css';
 import ServicesSidebar from './ServicesSidebar';
 import BillingSpecialties from '../servicecetagory/billing-specialities';
 import PatientSchedulingBanner from '../patientScheduling/patientscheduling';
+import HomePage from '../MedicalBillingHighlight';
 
 const servicesDetails = [
   {
@@ -184,6 +185,7 @@ export default function Details() {
             </ul>
           </div>
         </div>
+        <HomePage/>
               <PatientSchedulingBanner/>
              <BillingSpecialties/>
       </div>
