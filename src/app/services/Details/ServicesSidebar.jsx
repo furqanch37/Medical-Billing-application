@@ -1,21 +1,46 @@
+'use client';
+
 import React from 'react';
+import { useRouter } from 'next/navigation';
 import { LuMapPin, LuMail, LuPhone } from 'react-icons/lu';
 import './Details.css';
 
+// Your service categories matching the main service details data
+const serviceCategories = [
+  'End-to-End Billing Solutions',
+  'Claims Accuracy',
+  'Front-End Services',
+  'Coding Compliance',
+  'Reimbursement Recovery',
+  'Practice Optimization',
+  'Legal & Data Security',
+  'Financial Intelligence',
+];
+
 const ServicesSidebar = () => {
+  const router = useRouter();
+
+  const handleCategoryClick = (category) => {
+    const encodedCategory = encodeURIComponent(category);
+    router.push(`/services?category=${encodedCategory}`);
+  };
+
   return (
     <div className="sidebar">
       <div className="sidebar-section department">
         <h3>Our Services</h3>
         <ul>
-          <li>Claims Management</li>
-          <li>Revenue Cycle Optimization</li>
-          <li>Insurance Verification</li>
-          <li>Regulatory Compliance</li>
-          <li>Patient Billing</li>
-          <li>Accounts Receivable</li>
-          <li>Practice Consultancy</li>
-          <li className="active">Medical Billing Services</li>
+          {serviceCategories.map((category) => (
+            <li
+              key={category}
+              className="clickable-category"
+              onClick={() => handleCategoryClick(category)}
+              style={{ cursor: 'pointer' }}
+              title={`View details about ${category}`}
+            >
+              {category}
+            </li>
+          ))}
         </ul>
       </div>
 

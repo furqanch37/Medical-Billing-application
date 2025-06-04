@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import './mainnavbar.css';
 import { FaSearch, FaBars, FaTimes } from 'react-icons/fa';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const MainNavbar = ({ scrolled }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,10 +12,10 @@ const MainNavbar = ({ scrolled }) => {
 
   return (
     <div className={`main-navbar ${scrolled ? 'scrolled-bg' : ''}`}>
-      <div className="logo">
-        <span className="icon">+</span>
+      <Link href="/"><div className="logo">
+        <span className="icon" style={{background:'transparent'}}><Image src='/assets/logoone.png' width={30} height={30} /></span>
         <span className="brand"><strong>Care</strong>Watch</span>
-      </div>
+      </div></Link>
 
       <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
         {menuOpen ? <FaTimes /> : <FaBars />}
@@ -30,11 +31,10 @@ const MainNavbar = ({ scrolled }) => {
           <Link href="/#appointment" className="navLinkMain" onClick={closeMenu}>
   Faqs
 </Link>
-
+    <Link href="/contact" className="navLinkMain" onClick={closeMenu}>
+  Contact
+</Link>
           
-        </div>
-        <div className="search">
-          <button><Link href="/contact" className='navLinkMain' onClick={closeMenu}>Contact</Link></button>
         </div>
       </div>
     </div>

@@ -1,18 +1,10 @@
-import React from 'react'
-import "./services.css";
-import Banner from '../ReusableBanner/Banner';
-import Details from './Details/Details';
-const page = () => {
-  return (
-    <div>
-      <Banner  title="Outpatient Surgery"
-  breadcrumbs={[
-    { label: "Home", active: false },
-    { label: "Outpatient Surgery", active: true }
-  ]} />
-      <Details />
-    </div>
-  )
-}
+import React, { Suspense } from 'react';
+import ServicesPageClient from './ServicesPageClient';
 
-export default page
+export default function ServicesPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ServicesPageClient />
+    </Suspense>
+  );
+}

@@ -1,21 +1,36 @@
+'use client';
+
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 const services = [
-  { title: 'Medical Billing Services', category: 'In Consulting', image: '/assets/services/one.jpg' },
-  { title: 'Claims Processing', category: 'In Billing', image: '/assets/services/one.jpg' },
-  { title: 'Revenue Cycle Management', category: 'In Finance', image: '/assets/services/one.jpg' },
-  { title: 'Practice Management', category: 'In Operations', image: '/assets/services/one.jpg' },
-  { title: 'Coding & Documentation', category: 'In Compliance', image: '/assets/services/one.jpg' },
-  { title: 'Patient Eligibility Verification', category: 'In Patient Services', image: '/assets/services/one.jpg' },
-  { title: 'Denial Management', category: 'In Billing', image: '/assets/services/one.jpg' },
-  { title: 'Regulatory Compliance', category: 'In Legal', image: '/assets/services/one.jpg' },
+  { title: 'Comprehensive Revenue Cycle Management', category: 'End-to-End Billing Solutions', image: '/assets/doctors/service-1.jpg' },
+  { title: 'Clean Claim Submission & Tracking', category: 'Claims Accuracy', image: '/assets/doctors/service-2.jpg' },
+  { title: 'Patient Eligibility & Insurance Verification', category: 'Front-End Services', image: '/assets/doctors/service-3.jpg' },
+  { title: 'Medical Coding & Clinical Documentation Improvement', category: 'Coding Compliance', image: '/assets/doctors/service-4.jpg' },
+  { title: 'Denial Prevention, Management & Appeals', category: 'Reimbursement Recovery', image: '/assets/doctors/service-5.jpg' },
+  { title: 'Practice Operations & Billing Workflow Support', category: 'Practice Optimization', image: '/assets/doctors/service-5.jpg' },
+  { title: 'HIPAA Compliance & Regulatory Audits', category: 'Legal & Data Security', image: '/assets/doctors/service-1.jpg' },
+  { title: 'Performance Metrics, Analytics & Reporting', category: 'Financial Intelligence', image: '/assets/doctors/service-2.jpg' },
 ];
 
 export default function ClinicServices() {
+  const router = useRouter();
+
+  const handleCardClick = (category) => {
+    const encodedCategory = encodeURIComponent(category);
+    router.push(`/services?category=${encodedCategory}`);
+  };
+
   return (
     <div className="grid-container">
       {services.map((service, index) => (
-        <div key={index} className="card">
+        <div
+          key={index}
+          className="card cursor-pointer"
+          onClick={() => handleCardClick(service.category)}
+       style={{cursor:'pointer'}}
+        >
           <div className="image-wrapper">
             <Image
               src={service.image}

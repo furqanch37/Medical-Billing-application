@@ -7,10 +7,10 @@ import ServicesSidebar from '../services/Details/ServicesSidebar';
 const page = () => {
   return (
     <div>
-      <Banner  title="Department"
+      <Banner  title="Services"
   breadcrumbs={[
     { label: "Home", active: false },
-    { label: "Department", active: true }
+    { label: "All Services", active: true }
   ]} />
   <div className='main-div-1'>
       <ClinicServices />
