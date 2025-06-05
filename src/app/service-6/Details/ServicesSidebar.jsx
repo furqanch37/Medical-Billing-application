@@ -7,40 +7,40 @@ import './Details.css';
 
 // Your service categories matching the main service details data
 const serviceCategories = [
-  'End-to-End Billing Solutions',
-  'Claims Accuracy',
-  'Front-End Services',
-  'Coding Compliance',
-  'Reimbursement Recovery',
-  'Practice Optimization',
-  'Legal & Data Security',
-  'Financial Intelligence',
+  'Medical Billing & Coding Services',
+'Physicians Credentialing Services',
+'Revenue Cycle Management',
+'AR & Denial Management Services',
+'Medical Billing & Coding Audit',
+'Verification & Prior Authentication',
+'Contact Center & Patient Scheduling'
 ];
 
 const ServicesSidebar = () => {
   const router = useRouter();
+const handleCategoryClick = (index) => {
+  const path = index === 0 ? '/services' : `/service-${index + 1}`;
+  router.push(path);
+};
 
-  const handleCategoryClick = (category) => {
-    const encodedCategory = encodeURIComponent(category);
-    router.push(`/services?category=${encodedCategory}`);
-  };
 
   return (
     <div className="sidebar">
       <div className="sidebar-section department">
         <h3>Our Services</h3>
         <ul>
-          {serviceCategories.map((category) => (
-            <li
-              key={category}
-              className="clickable-category"
-              onClick={() => handleCategoryClick(category)}
-              style={{ cursor: 'pointer' }}
-              title={`View details about ${category}`}
-            >
-              {category}
-            </li>
-          ))}
+          {serviceCategories.map((category, index) => (
+  <li
+    key={category}
+    className="clickable-category"
+    onClick={() => handleCategoryClick(index)}
+    style={{ cursor: 'pointer' }}
+    title={`View details about ${category}`}
+  >
+    {category}
+  </li>
+))}
+
         </ul>
       </div>
 

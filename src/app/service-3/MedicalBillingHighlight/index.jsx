@@ -1,8 +1,10 @@
+'use client';
+
 import MedicalBillingHighlight from "./MedicalBillingHighlight";
 
 export default function HomePage() {
-  return (
-    <MedicalBillingHighlight
+return (
+<MedicalBillingHighlight
       title="Why Choose Our Revenue Cycle Management Services?"
       paragraphs={[
         "At CareWatch, we know that even small errors in medical billing and coding can impact your financial health. That’s why we employ certified experts dedicated to delivering precise, reliable services tailored to your practice.",
@@ -15,5 +17,5 @@ export default function HomePage() {
       mainImage="/images/money-handoff.jpg"
       overlayImage="/images/coins-hand.jpg"
     />
-  );
+);
 }

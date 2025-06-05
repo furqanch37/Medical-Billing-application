@@ -1,8 +1,10 @@
+'use client';
+
 import MedicalBillingHighlight from "./MedicalBillingHighlight";
 
 export default function HomePage() {
-  return (
-    <MedicalBillingHighlight
+return (
+<MedicalBillingHighlight
       title="Why Choose CareWatch for Your Medical Billing and Denial Management?"
       paragraphs={[
         "At CareWatch, we know that even small errors in Medical Billing and Denial Management can cause significant financial setbacks. That’s why we employ certified, experienced professionals dedicated to delivering expert billing services tailored for healthcare providers.",
@@ -15,5 +17,5 @@ export default function HomePage() {
       mainImage="/images/money-handoff.jpg"
       overlayImage="/images/coins-hand.jpg"
     />
-  );
+);
 }

@@ -1,16 +1,16 @@
 'use client';
 
-import Image from 'next/image';
+import { useSearchParams } from 'next/navigation';
 import './Details.css';
-
 import ServicesSidebar from './ServicesSidebar';
-import BillingSpecialties from '../servicecetagory/billing-specialities';
+import MedicalBillingFlow from '../MedicalBillingflow/MedicalBillingFlow';
 import PatientSchedulingBanner from '../patientScheduling/patientscheduling';
 import HomePage from '../MedicalBillingHighlight';
-import MedicalBillingFlow from '../MedicalBillingflow/MedicalBillingFlow';
+import BillingSpecialties from '../servicecetagory/billing-specialities';
 
-const denialManagementServices = {
-  category: 'AR & Denial Management Services',
+const servicesDetails = [
+  {
+    category: 'AR & Denial Management Services',
   title: 'Transform Denials into Dollars with Expert Denial & AR Management',
   image: '/assets/doctors/service-4.jpg',
   description: [
@@ -27,48 +27,45 @@ const denialManagementServices = {
     'Handling Partial Payments & Denial Appeals',
     'Proactive AR Follow-Ups & Revenue Recovery Solutions',
   ],
-};
+  },
+];
 
 export default function Details() {
-  const service = denialManagementServices;
+  const searchParams = useSearchParams();
+  const category = searchParams.get('category') || 'End-to-End Billing Solutions';
+
+  // Find the service detail matching the category (case insensitive)
+  const service = servicesDetails.find(
+    (s) => s.category.toLowerCase() === category.toLowerCase()
+  ) || servicesDetails[0]; // fallback to first if no match
 
   return (
     <div className="outpatient-container">
       <ServicesSidebar />
       <div className="content">
-        <Image
-          src={service.image}
-          alt={service.title}
-          className="top-image"
-          width={1000}
-          height={500}
-          priority
-        />
+        <img src={service.image} alt={service.title} className="top-image" />
         <h2>{service.title}</h2>
-
         {service.description.map((para, idx) => (
-          <p className="content-1" key={idx}>
-            {para}
-          </p>
+          <p key={idx}>{para}</p>
         ))}
 
-        {service.servicesList.length > 0 && (
-          <div className="services-grid">
-            <div className="services-card">
-              <h4>{service.category}</h4>
-              <ul>
-                {service.servicesList.map((item, idx) => (
-                  <li key={idx}>{item}</li>
-                ))}
-              </ul>
-            </div>
+        <div className="services-grid">
+          <div className="services-card">
+            <h4>{service.category}</h4>
+            <ul>
+              {service.servicesList.map((item, idx) => (
+                <li key={idx}>{item}</li>
+              ))}
+            </ul>
           </div>
-        )}
+        </div>
 
-        <MedicalBillingFlow />
-        <PatientSchedulingBanner />
-        <HomePage />
-        <BillingSpecialties />
+<MedicalBillingFlow/>
+          <PatientSchedulingBanner/>
+        <HomePage/>
+            
+             <BillingSpecialties/>
+
       </div>
     </div>
   );

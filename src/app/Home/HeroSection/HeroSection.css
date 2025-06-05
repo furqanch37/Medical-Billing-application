@@ -1,7 +1,7 @@
 .hero-section {
-  background-image: url('/assets/home/hero/bg-1.jpg'); /* Update the path if needed */
+  background-image: url('/assets/banner-two.jpg'); /* Update the path if needed */
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   height: 81.9vh;
   display: flex;

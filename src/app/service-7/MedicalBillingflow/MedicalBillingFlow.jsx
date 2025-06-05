@@ -38,5 +38,5 @@ export default function MedicalBillingFlow() {
         </div>
       </div>
     </section>
-  );
+    );
 }

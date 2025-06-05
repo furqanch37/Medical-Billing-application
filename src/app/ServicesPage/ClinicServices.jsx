@@ -47,6 +47,5 @@ export default function ClinicServices() {
         </div>
       ))}
     </div>
-    
   );
 }

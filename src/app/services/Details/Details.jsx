@@ -3,10 +3,10 @@
 import { useSearchParams } from 'next/navigation';
 import './Details.css';
 import ServicesSidebar from './ServicesSidebar';
-import BillingSpecialties from '../servicecetagory/billing-specialities';
+import MedicalBillingFlow from '../MedicalBillingflow/MedicalBillingFlow';
 import PatientSchedulingBanner from '../patientScheduling/patientscheduling';
 import HomePage from '../MedicalBillingHighlight';
-import MedicalBillingFlow from '../MedicalBillingflow/MedicalBillingFlow';
+import BillingSpecialties from '../servicecetagory/billing-specialities';
 
 const servicesDetails = [
   {
@@ -28,7 +28,6 @@ const servicesDetails = [
   },
   // ... other services remain unchanged or similarly updated as needed
 ];
-
 export default function Details() {
   const searchParams = useSearchParams();
   const category = searchParams.get('category') || 'End-to-End Billing Solutions';
@@ -45,7 +44,7 @@ export default function Details() {
         <img src={service.image} alt={service.title} className="top-image" />
         <h2>{service.title}</h2>
         {service.description.map((para, idx) => (
-          <p className="content-1" key={idx}>{para}</p>
+          <p key={idx}>{para}</p>
         ))}
 
         <div className="services-grid">
@@ -58,13 +57,14 @@ export default function Details() {
             </ul>
           </div>
         </div>
-        <MedicalBillingFlow/>
+
+<MedicalBillingFlow/>
           <PatientSchedulingBanner/>
         <HomePage/>
             
              <BillingSpecialties/>
+
       </div>
- 
     </div>
   );
 }

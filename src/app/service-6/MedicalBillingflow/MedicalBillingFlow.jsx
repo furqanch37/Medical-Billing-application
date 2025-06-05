@@ -3,7 +3,7 @@ import "./MedicalBillingFlow.css";
 
 export default function MedicalBillingFlow() {
   return (
-    <section className="medical-billing-section">
+ <section className="medical-billing-section">
       <h2 className="section-title">
         CareWatch’s Streamlined Process for Medical Billing & Prior Authorization
       </h2>
@@ -38,5 +38,6 @@ export default function MedicalBillingFlow() {
         </div>
       </div>
     </section>
-  );
+  
+   );
 }

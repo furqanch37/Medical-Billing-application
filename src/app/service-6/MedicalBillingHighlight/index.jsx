@@ -1,8 +1,10 @@
+'use client';
+
 import MedicalBillingHighlight from "./MedicalBillingHighlight";
 
 export default function HomePage() {
-  return (
-    <MedicalBillingHighlight
+return (
+<MedicalBillingHighlight
       title="Why CareWatch’s Medical Billing and Coding Services Make a Difference"
       paragraphs={[
         "At CareWatch, we know that even small errors in medical billing and coding can lead to major financial setbacks. That’s why we employ certified, experienced professionals dedicated to delivering precise and compliant services tailored to your healthcare practice.",
@@ -15,5 +17,5 @@ export default function HomePage() {
       mainImage="/images/money-handoff.jpg"
       overlayImage="/images/coins-hand.jpg"
     />
-  );
+);
 }

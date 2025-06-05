@@ -1,11 +1,12 @@
 'use client';
 
+import { useSearchParams } from 'next/navigation';
 import './Details.css';
 import ServicesSidebar from './ServicesSidebar';
-import BillingSpecialties from '../servicecetagory/billing-specialities';
+import MedicalBillingFlow from '../MedicalBillingflow/MedicalBillingFlow';
 import PatientSchedulingBanner from '../patientScheduling/patientscheduling';
 import HomePage from '../MedicalBillingHighlight';
-import MedicalBillingFlow from '../MedicalBillingflow/MedicalBillingFlow';
+import BillingSpecialties from '../servicecetagory/billing-specialities';
 
 const servicesDetails = [
   {
@@ -27,11 +28,16 @@ const servicesDetails = [
       'Ongoing Follow-Up and Continuous Support',
     ],
   },
-  // other service objects remain for reuse if needed
 ];
 
 export default function Details() {
-  const service = servicesDetails[0]; // hardcoded selection
+  const searchParams = useSearchParams();
+  const category = searchParams.get('category') || 'End-to-End Billing Solutions';
+
+  // Find the service detail matching the category (case insensitive)
+  const service = servicesDetails.find(
+    (s) => s.category.toLowerCase() === category.toLowerCase()
+  ) || servicesDetails[0]; // fallback to first if no match
 
   return (
     <div className="outpatient-container">
@@ -40,7 +46,7 @@ export default function Details() {
         <img src={service.image} alt={service.title} className="top-image" />
         <h2>{service.title}</h2>
         {service.description.map((para, idx) => (
-          <p className="content-1" key={idx}>{para}</p>
+          <p key={idx}>{para}</p>
         ))}
 
         <div className="services-grid">
@@ -54,10 +60,12 @@ export default function Details() {
           </div>
         </div>
 
-        <MedicalBillingFlow />
-        <PatientSchedulingBanner />
-        <HomePage />
-        <BillingSpecialties />
+<MedicalBillingFlow/>
+          <PatientSchedulingBanner/>
+        <HomePage/>
+            
+             <BillingSpecialties/>
+
       </div>
     </div>
   );

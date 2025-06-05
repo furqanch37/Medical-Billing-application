@@ -3,7 +3,7 @@ import "./MedicalBillingFlow.css";
 
 export default function MedicalBillingFlow() {
   return (
-    <section className="medical-billing-section">
+  <section className="medical-billing-section">
       <h2 className="section-title">
         Our Streamlined Revenue Cycle Management Process for Maximum Financial Results
       </h2>
@@ -37,6 +37,6 @@ export default function MedicalBillingFlow() {
           />
         </div>
       </div>
-    </section>
-  );
+    </section> 
+   );
 }

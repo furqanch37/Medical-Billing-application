@@ -1,3 +1,5 @@
+'use client';
+
 import MedicalBillingHighlight from "./MedicalBillingHighlight";
 
 export default function HomePage() {
