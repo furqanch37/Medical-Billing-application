@@ -1,12 +1,12 @@
-import React from 'react';
+import React from 'react'; 
 import Image from 'next/image';
 import './PatientSchedulingBanner.css';
 
 const PatientSchedulingBanner = ({
   icon = '/assets/sub-services/23.png',
-  title = 'Need Reliable 24/7 Patient Scheduling Services?',
-  subtitle = 'Partner with CareWatch for expert, affordable scheduling solutions that ensure seamless appointment management and improve patient satisfaction.',
-  buttonText = "Get Started Today ➞",
+  title = 'Seamless and Reliable Patient Scheduling Services',
+  subtitle = 'Experience efficient, affordable, and expert patient scheduling solutions that simplify your workflow and enhance patient satisfaction.',
+  buttonText = "Connect with Us ➞",
   onButtonClick = () => {},
 }) => {
   return (

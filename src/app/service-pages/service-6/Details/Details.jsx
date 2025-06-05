@@ -9,27 +9,29 @@ import PatientSchedulingBanner from '../patientScheduling/patientscheduling';
 import HomePage from '../MedicalBillingHighlight';
 import MedicalBillingFlow from '../MedicalBillingflow/MedicalBillingFlow';
 
-const practiceOptimizationService = {
-  category: 'Contact Center & Patient Scheduling',
-  title: 'Practice Operations & Billing Workflow Support',
-  image: '/assets/doctors/service-1.jpg',
+const verificationAndPriorAuthServices = {
+  category: 'Verification of Benefits & Prior Authorization',
+  title: 'Streamlined Verification & Prior Authorization Services for Healthcare Providers',
+  image: '/assets/doctors/service-5.jpg',
   description: [
-    `At CareWatch, we know that efficient practice operations and optimized billing workflows are key to minimizing errors, boosting productivity, and elevating patient satisfaction. Our Practice Optimization services are customized to fit the unique needs of your healthcare organization.`,
+    `Verification of Benefits (VOB) and Prior Authorization (PA) are essential processes that ensure accurate insurance coverage verification and timely payer approvals, helping healthcare providers avoid costly claim denials and delays.`,
 
-    `We conduct thorough evaluations of your existing billing processes, administrative workflows, and technology systems to uncover bottlenecks and opportunities for enhancement. Our experts design streamlined workflows that foster better communication between clinical and administrative teams while eliminating redundant tasks.`,
+    `At CareWatch, our expert team meticulously collects patient and insurance information, verifies eligibility and benefits, and handles prior authorization submissions with precision. We reduce administrative burdens and protect your practice’s financial health by preventing payment disruptions and ensuring compliance.`,
 
-    `Beyond workflow improvements, we provide comprehensive staff training on best practices and billing software tools, empowering your team to manage billing with confidence and accuracy. We also enhance patient financial communication to improve transparency, helping patients understand their responsibilities and speeding up payment collections.`,
+    `Our proactive follow-up and clear communication with providers and patients guarantee a seamless experience, allowing your team to focus on delivering outstanding patient care while we manage the complexities of insurance verification and authorization.`,
   ],
   servicesList: [
-    'In-Depth Workflow Assessment and Tailored Process Redesign',
-    'Ongoing Billing Staff Training and Support',
-    'Practice Management System Integration and Enhancement',
-    'Clear and Compassionate Patient Financial Communication Strategies',
+    'Comprehensive Patient Insurance Eligibility Verification',
+    'Detailed Benefits and Coverage Assessment',
+    'Accurate Prior Authorization Submission and Tracking',
+    'Regular Follow-Up with Payers to Expedite Approvals',
+    'Authorization Documentation and Compliance Management',
+    'Clear Communication with Providers and Patients',
   ],
 };
 
 export default function Details() {
-  const service = practiceOptimizationService;
+  const service = verificationAndPriorAuthServices;
 
   return (
     <div className="outpatient-container">

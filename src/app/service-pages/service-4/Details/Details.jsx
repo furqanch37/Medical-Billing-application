@@ -9,27 +9,28 @@ import PatientSchedulingBanner from '../patientScheduling/patientscheduling';
 import HomePage from '../MedicalBillingHighlight';
 import MedicalBillingFlow from '../MedicalBillingflow/MedicalBillingFlow';
 
-const practiceOptimizationService = {
-  category: 'Contact Center & Patient Scheduling',
-  title: 'Practice Operations & Billing Workflow Support',
-  image: '/assets/doctors/service-1.jpg',
+const denialManagementServices = {
+  category: 'AR & Denial Management Services',
+  title: 'Transform Denials into Dollars with Expert Denial & AR Management',
+  image: '/assets/doctors/service-4.jpg',
   description: [
-    `At CareWatch, we know that efficient practice operations and optimized billing workflows are key to minimizing errors, boosting productivity, and elevating patient satisfaction. Our Practice Optimization services are customized to fit the unique needs of your healthcare organization.`,
+    `CareWatch specializes in comprehensive Denial and Accounts Receivable (AR) Management services tailored to reduce denials, enhance cash flow, and maximize revenue recovery for healthcare providers.`,
 
-    `We conduct thorough evaluations of your existing billing processes, administrative workflows, and technology systems to uncover bottlenecks and opportunities for enhancement. Our experts design streamlined workflows that foster better communication between clinical and administrative teams while eliminating redundant tasks.`,
+    `Our experienced team performs thorough root cause analyses of claim denials, identifies errors promptly, and implements effective strategies such as timely claim resubmissions, appeals, and diligent follow-ups. We monitor every claim from submission through payment, offering clear updates and actionable insights.`,
 
-    `Beyond workflow improvements, we provide comprehensive staff training on best practices and billing software tools, empowering your team to manage billing with confidence and accuracy. We also enhance patient financial communication to improve transparency, helping patients understand their responsibilities and speeding up payment collections.`,
+    `By leveraging advanced technology alongside a compassionate, provider-focused approach, CareWatch helps minimize revenue loss, prevent future denials, and streamline your revenue cycle — so you can concentrate on delivering outstanding patient care.`,
   ],
   servicesList: [
-    'In-Depth Workflow Assessment and Tailored Process Redesign',
-    'Ongoing Billing Staff Training and Support',
-    'Practice Management System Integration and Enhancement',
-    'Clear and Compassionate Patient Financial Communication Strategies',
+    'Comprehensive Claim Tracking & Status Updates',
+    'In-Depth Root Cause Denial Analysis & Correction',
+    'Strategic Claim Adjustments & Timely Resubmissions',
+    'Handling Partial Payments & Denial Appeals',
+    'Proactive AR Follow-Ups & Revenue Recovery Solutions',
   ],
 };
 
 export default function Details() {
-  const service = practiceOptimizationService;
+  const service = denialManagementServices;
 
   return (
     <div className="outpatient-container">

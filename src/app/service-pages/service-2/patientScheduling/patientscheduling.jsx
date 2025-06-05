@@ -5,8 +5,8 @@ import './PatientSchedulingBanner.css';
 const PatientSchedulingBanner = ({
 icon = '/assets/sub-services/23.png',
 title = 'Streamline Your Patient Scheduling with CareWatch',
-subtitle = 'CareWatch offers cost-effective and expert patient scheduling services designed to optimize your front-office workflow and enhance patient satisfaction. Connect with us today!',
-buttonText = "Let’s Connect ➞",
+subtitle = 'Deliver a better patient experience and reduce no-shows with our reliable, HIPAA-compliant scheduling services—customized for your workflow.',
+buttonText = "Schedule a Free Demo ➞",
 onButtonClick = () => {},
 }) => {
 return (
@@ -26,4 +26,5 @@ return (
 </div>
 );
 };
+
 export default PatientSchedulingBanner;

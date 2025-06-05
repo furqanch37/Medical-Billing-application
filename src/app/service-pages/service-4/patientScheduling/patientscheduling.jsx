@@ -4,9 +4,9 @@ import './PatientSchedulingBanner.css';
 
 const PatientSchedulingBanner = ({
   icon = '/assets/sub-services/23.png',
-  title = 'Need Reliable 24/7 Patient Scheduling Services?',
-  subtitle = 'Partner with CareWatch for expert, affordable scheduling solutions that ensure seamless appointment management and improve patient satisfaction.',
-  buttonText = "Get Started Today ➞",
+  title = 'Need Reliable & Compassionate Patient Scheduling Services?',
+  subtitle = 'At CareWatch, we deliver seamless and affordable patient scheduling solutions tailored to enhance your practice’s efficiency and patient experience. Connect with us today to simplify your scheduling process!',
+  buttonText = "Let’s Connect ➞",
   onButtonClick = () => {},
 }) => {
   return (
