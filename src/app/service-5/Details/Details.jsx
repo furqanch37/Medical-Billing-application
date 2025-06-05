@@ -9,23 +9,25 @@ import MedicalBillingFlow from '../MedicalBillingflow/MedicalBillingFlow';
 
 const servicesDetails = [
   {
-    category: 'End-to-End Billing Solutions',
-    title: 'Comprehensive Revenue Cycle Management',
+    category: 'Medical Billing & Coding Audit',
+    title: 'Gain Financial Clarity and Compliance Confidence with Expert Billing Audits',
     image: '/assets/doctors/service-1.jpg',
     description: [
-      `Our Comprehensive Revenue Cycle Management (RCM) services provide an all-inclusive, seamless approach to managing the entire medical billing process, from patient registration to final payment collection. With extensive experience in healthcare billing, we optimize every phase to ensure accuracy, reduce errors, and expedite reimbursements, enabling healthcare providers to focus on patient care rather than administrative burdens.`,
-      `By leveraging advanced billing technology combined with expert human oversight, we manage insurance verification, claims submission, payment posting, and accounts receivable management. Our proactive claim monitoring system identifies potential issues before they become costly delays, ensuring higher claim acceptance rates and improving overall cash flow for medical practices.`,
-      `Additionally, our team continuously analyzes revenue cycle performance metrics and implements customized strategies that reduce denials, accelerate payment cycles, and maximize practice revenue. Partner with us for a reliable, transparent, and efficient RCM service designed to meet the specific needs of your healthcare specialty.`,
+      `At CareWatch, our Medical Billing & Coding Audit services empower healthcare providers by uncovering hidden revenue gaps and ensuring compliance across your revenue cycle. We provide a thorough, data-driven review of your billing and coding processes to identify strengths, detect risks, and optimize financial performance.`,
+      
+      `Our expert team combines advanced analytics, policy review, and on-site evaluations to deliver actionable insights that help you recover lost revenue and improve audit readiness. Beyond fixing issues, our audits educate your staff on complex billing regulations, fostering continuous improvement and operational efficiency.`,
+
+      `We offer risk-based, focused, and regularly scheduled audits tailored to your practice's unique needs—ensuring consistent oversight, early detection of discrepancies, and sustained revenue cycle optimization. Partner with CareWatch for transparent, secure, and dependable audit services designed to boost your practice’s financial health while you focus on exceptional patient care.`,
     ],
     servicesList: [
-      'Patient Registration & Insurance Eligibility Verification',
-      'Claims Preparation, Submission & Tracking',
-      'Payment Posting & Reconciliation',
-      'Accounts Receivable Management & Follow-up',
-      'Revenue Cycle Analytics, Reporting & Optimization',
+      'In-depth Review of Billing & Coding Policies',
+      'Comprehensive Data Analysis & On-site Evaluation',
+      'Risk-Based, Focused, and Scheduled Audits',
+      'Detailed Reporting with Clear Recommendations',
+      'Ongoing Follow-Up and Continuous Support',
     ],
   },
-  // other service objects remain in case you want to reuse them later
+  // other service objects remain for reuse if needed
 ];
 
 export default function Details() {

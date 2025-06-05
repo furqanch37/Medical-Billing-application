@@ -10,25 +10,24 @@ export default function MedicalBillingFlow() {
 
       <div className="content-container">
         <div className="text-content">
-          <p>
-            In Medical Billing, what happens behind the scenes can make or break a practice’s revenue
-            flow. We’ve seen firsthand how success depends on the first steps—patient registration and
-            insurance verification. These early moments set the tone for everything that follows. Once
-            the provider delivers care, our skilled coding team translates clinical notes into accurate
-            CPT, ICD, and HCPCS codes. Each entry reflects not only the complexity of treatment but also
-            our responsibility to maintain accuracy and uphold industry standards.
-          </p>
+            <p>
+        At CareWatch, we understand that what happens behind the scenes in medical billing can
+        significantly impact a practice’s revenue flow. We’ve seen firsthand how success is determined
+        from the earliest steps—patient registration and insurance verification. These foundational
+        stages set the tone for the entire billing cycle. Once a provider delivers care, our expert
+        coding team translates clinical documentation into precise CPT, ICD, and HCPCS codes,
+        accurately reflecting the complexity and medical necessity of each service.
+      </p>
 
-          <p>
-            The process then moves into a phase where precision is non-negotiable. Claims are carefully
-            reviewed, scrubbed for errors, and submitted to the appropriate payers through secure
-            channels. Our team closely monitors each submission, intervening quickly to resolve
-            discrepancies before they disrupt cash flow. Every step—from documentation to denial
-            management—is guided by a strong commitment to compliance and transparency. This is how Pro
-            Medical Billing Solutions ensures that providers are paid promptly and correctly, while
-            patients experience a seamless, trustworthy billing process.
-          </p>
-
+      <p>
+        The process then advances to a critical stage where precision becomes non-negotiable.
+        Claims are thoroughly reviewed, scrubbed for errors, and submitted through secure, compliant
+        channels to the appropriate payers. Our team actively monitors every submission, addressing
+        discrepancies quickly to avoid any disruption in cash flow. From documentation to denial
+        management, each phase is executed with a steadfast commitment to compliance and
+        transparency. This is how CareWatch ensures providers are reimbursed promptly and accurately,
+        while patients experience a streamlined, trustworthy billing journey.
+      </p>
           <button className="start-button">
             Let's Get Started
           </button>

@@ -9,22 +9,23 @@ import HomePage from '../MedicalBillingHighlight';
 import BillingSpecialties from '../servicecetagory/billing-specialities';
 
 export default function Details() {
-  // Hardcoded service data for "Claims Accuracy"
+  // Updated service data for Revenue Cycle Management
   const service = {
-    category: 'Claims Accuracy',
-    title: 'Clean Claim Submission & Tracking',
-    image: '/assets/doctors/service-2.jpg',
+    category: 'Revenue Cycle Management',
+    title: 'Revenue Cycle Management Services That Drive Real Financial Results',
+    image: '/assets/doctors/service-rcm.jpg', // Replace with your actual image path
     description: [
-      `Clean claim submission is vital to accelerate reimbursements and avoid costly denials or delays. Our Claims Accuracy service ensures that every medical claim is meticulously reviewed and scrubbed for errors before submission, adhering to payer-specific guidelines and industry best practices.`,
-      `Our team utilizes cutting-edge claim scrubbing software and manual expert reviews by certified coders to detect and correct inaccuracies such as coding mismatches, missing documentation, or incorrect patient information. This rigorous process reduces claim rejection rates significantly and speeds up the payment lifecycle.`,
-      `We also provide continuous tracking of all submitted claims, promptly identifying any issues that arise during processing and swiftly initiating corrective actions or resubmissions. Our comprehensive payer communication helps resolve disputes quickly, thereby enhancing your practice’s financial stability and administrative efficiency.`,
+      `At CareWatch, we understand the daily revenue pressures facing healthcare professionals. Our Revenue Cycle Management (RCM) services are purpose-built to reduce denials, shorten AR cycles, and optimize claim turnaround time—without burdening your staff.`,
+      `We offer a complete suite of RCM solutions, from insurance verification to denial recovery and AR follow-up. By combining certified coders with intelligent automation, we streamline your revenue process, improve reimbursement rates, and minimize costly billing errors.`,
+      `With real-time reporting, regulatory compliance assurance, and a dedicated support team, CareWatch empowers you to focus on patient care while we manage the financial complexities. Our goal is to help you boost revenue, enhance collection ratios, and reduce administrative overhead.`,
     ],
     servicesList: [
-      'Automated and Manual Claims Scrubbing',
-      'Real-Time Claim Validation & Error Correction',
-      'Denial Prevention and Reduction Strategies',
-      'Claims Follow-Up and Resubmission Processes',
-      'Effective Payer Communication and Support',
+      'Insurance Eligibility Verification & Patient Onboarding',
+      'Accurate Charge Capture & Medical Coding',
+      'Claim Scrubbing, Submission, and Tracking',
+      'Payment Posting, Reconciliation, and AR Follow-Up',
+      'Denial Management & Appeals',
+      'HIPAA-Compliant Audits & Real-Time KPI Reporting',
     ],
   };
 
@@ -33,11 +34,7 @@ export default function Details() {
       <ServicesSidebar />
 
       <div className="content">
-        <img
-          src={service.image}
-          alt={service.title}
-          className="top-image"
-        />
+        <img src={service.image} alt={service.title} className="top-image" />
         <h2>{service.title}</h2>
 
         {service.description.map((para, idx) => (

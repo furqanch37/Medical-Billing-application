@@ -5,28 +5,21 @@ export default function MedicalBillingFlow() {
   return (
     <section className="medical-billing-section">
       <h2 className="section-title">
-        Our Streamlined Approach And Process Flow to Medical Billing Services!
+        Our Streamlined Revenue Cycle Management Process for Maximum Financial Results
       </h2>
 
       <div className="content-container">
         <div className="text-content">
           <p>
-            In Medical Billing, what happens behind the scenes can make or break a practice’s revenue
-            flow. We’ve seen firsthand how success depends on the first steps—patient registration and
-            insurance verification. These early moments set the tone for everything that follows. Once
-            the provider delivers care, our skilled coding team translates clinical notes into accurate
-            CPT, ICD, and HCPCS codes. Each entry reflects not only the complexity of treatment but also
-            our responsibility to maintain accuracy and uphold industry standards.
+            At CareWatch, we know the backbone of a healthy practice is a smooth revenue cycle. It starts with accurate patient onboarding and insurance verification—setting the stage to minimize denials and delays.
           </p>
 
           <p>
-            The process then moves into a phase where precision is non-negotiable. Claims are carefully
-            reviewed, scrubbed for errors, and submitted to the appropriate payers through secure
-            channels. Our team closely monitors each submission, intervening quickly to resolve
-            discrepancies before they disrupt cash flow. Every step—from documentation to denial
-            management—is guided by a strong commitment to compliance and transparency. This is how Pro
-            Medical Billing Solutions ensures that providers are paid promptly and correctly, while
-            patients experience a seamless, trustworthy billing process.
+            After care delivery, our certified coding specialists translate clinical documentation into precise CPT, ICD, and HCPCS codes. This attention to detail ensures claims are accurate and compliant.
+          </p>
+
+          <p>
+            Claims then go through rigorous scrubbing and are submitted securely to payers. Our team proactively tracks each claim, quickly resolving issues to maintain steady cash flow. From payment posting to denial management, every step is designed for transparency, compliance, and timely reimbursements.
           </p>
 
           <button className="start-button">

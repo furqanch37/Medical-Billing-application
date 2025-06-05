@@ -9,27 +9,28 @@ import PatientSchedulingBanner from '../patientScheduling/patientscheduling';
 import HomePage from '../MedicalBillingHighlight';
 import MedicalBillingFlow from '../MedicalBillingflow/MedicalBillingFlow';
 
-const codingComplianceServices = {
-  category: 'Coding Compliance',
-  title: 'Medical Coding & Clinical Documentation Improvement',
+const denialManagementServices = {
+  category: 'AR & Denial Management Services',
+  title: 'Transform Denials into Dollars with Expert Denial & AR Management',
   image: '/assets/doctors/service-4.jpg',
   description: [
-    `Accurate and compliant medical coding is the foundation of proper reimbursement and regulatory adherence. Our Medical Coding & Clinical Documentation Improvement (CDI) services ensure that all diagnoses, procedures, and services are coded correctly, reflecting the complexity and medical necessity of care provided.`,
+    `CareWatch specializes in comprehensive Denial and Accounts Receivable (AR) Management services tailored to reduce denials, enhance cash flow, and maximize revenue recovery for healthcare providers.`,
 
-    `Our certified professional coders stay up to date with the latest ICD-10, CPT, and HCPCS guidelines, applying best practices to maximize legitimate reimbursements while reducing audit risks. We collaborate closely with healthcare providers to review and enhance clinical documentation, supporting thorough and precise coding.`,
+    `Our experienced team performs thorough root cause analyses of claim denials, identifies errors promptly, and implements effective strategies such as timely claim resubmissions, appeals, and diligent follow-ups. We monitor every claim from submission through payment, offering clear updates and actionable insights.`,
 
-    `Through targeted CDI initiatives, we help identify documentation gaps, educate providers, and implement corrective measures to improve code specificity and compliance. This improves revenue integrity, accelerates payments, and prepares practices for external audits with confidence.`,
+    `By leveraging advanced technology alongside a compassionate, provider-focused approach, CareWatch helps minimize revenue loss, prevent future denials, and streamline your revenue cycle — so you can concentrate on delivering outstanding patient care.`,
   ],
   servicesList: [
-    'Accurate ICD-10, CPT, and HCPCS Coding',
-    'Clinical Documentation Review and Improvement Programs',
-    'Coding Audits and Compliance Monitoring',
-    'Provider Education and Staff Training on Coding Updates',
+    'Comprehensive Claim Tracking & Status Updates',
+    'In-Depth Root Cause Denial Analysis & Correction',
+    'Strategic Claim Adjustments & Timely Resubmissions',
+    'Handling Partial Payments & Denial Appeals',
+    'Proactive AR Follow-Ups & Revenue Recovery Solutions',
   ],
 };
 
 export default function Details() {
-  const service = codingComplianceServices;
+  const service = denialManagementServices;
 
   return (
     <div className="outpatient-container">

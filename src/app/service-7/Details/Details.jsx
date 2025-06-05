@@ -10,7 +10,7 @@ import HomePage from '../MedicalBillingHighlight';
 import MedicalBillingFlow from '../MedicalBillingflow/MedicalBillingFlow';
 
 const practiceOptimizationService = {
-  category: 'Practice Optimization',
+  category: 'Contact Center & Patient Scheduling',
   title: 'Practice Operations & Billing Workflow Support',
   image: '/assets/doctors/service-1.jpg',
   description: [

@@ -1,19 +1,19 @@
 import MedicalBillingHighlight from "./MedicalBillingHighlight";
 
 export default function HomePage() {
-  return (
-    <MedicalBillingHighlight
-      title="What Makes Our Medical Billing and Coding Services Stand Out?"
-      paragraphs={[
-        "Pro Medical Billing Solutions understands that even minor errors and mistakes in Medical Billing and Coding Services can lead to significant financial issues. We prioritize hiring certified and experienced professionals to provide top-tier services to healthcare providers nationwide.",
-        "Our dedicated team works closely with you to meet your specific needs, ensuring accuracy and compliance. Our proactive strategies focus on maximizing your financial success by submitting accurate claims and meeting industry benchmarks.",
-        "With 24/7 web-based access and client support, you gain real-time visibility into your financial and Billing activities, empowering you to make informed decisions for better Revenue Cycle Management.",
-      ]}
-      buttonText="Let’s Connect"
-      buttonLink="/contact"
-      badgeText="150+ Providers"
-      mainImage="/images/money-handoff.jpg"
-      overlayImage="/images/coins-hand.jpg"
-    />
-  );
+return (
+<MedicalBillingHighlight
+title="Why Healthcare Providers Trust CareWatch for Medical Billing"
+paragraphs={[
+"At CareWatch, we go beyond the numbers. Our Medical Billing and Coding services are designed to reduce claim errors, eliminate payment delays, and boost your revenue performance—all while maintaining full regulatory compliance.",
+"We employ certified billing professionals who work closely with your practice to understand its unique workflows. Every claim is thoroughly reviewed and coded for accuracy, ensuring maximum reimbursement and minimal denials.",
+"With secure 24/7 access to your billing data, transparent reporting, and dedicated support, we empower healthcare providers to stay financially healthy while focusing on patient care."
+]}
+buttonText="Get a Free Consultation"
+buttonLink="/contact"
+badgeText="Trusted by 150+ Providers"
+mainImage="/images/money-handoff.jpg"
+overlayImage="/images/coins-hand.jpg"
+/>
+);
 }

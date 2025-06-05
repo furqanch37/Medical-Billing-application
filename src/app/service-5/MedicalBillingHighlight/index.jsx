@@ -3,15 +3,15 @@ import MedicalBillingHighlight from "./MedicalBillingHighlight";
 export default function HomePage() {
   return (
     <MedicalBillingHighlight
-      title="What Makes Our Medical Billing and Coding Services Stand Out?"
+      title="Why CareWatch’s Medical Billing and Coding Services Excel"
       paragraphs={[
-        "Pro Medical Billing Solutions understands that even minor errors and mistakes in Medical Billing and Coding Services can lead to significant financial issues. We prioritize hiring certified and experienced professionals to provide top-tier services to healthcare providers nationwide.",
-        "Our dedicated team works closely with you to meet your specific needs, ensuring accuracy and compliance. Our proactive strategies focus on maximizing your financial success by submitting accurate claims and meeting industry benchmarks.",
-        "With 24/7 web-based access and client support, you gain real-time visibility into your financial and Billing activities, empowering you to make informed decisions for better Revenue Cycle Management.",
+        "At CareWatch, we know that even small errors in medical billing and coding can lead to significant financial setbacks. That’s why we employ certified, experienced professionals dedicated to delivering precise, compliant services to healthcare providers across the nation.",
+        "Our collaborative approach means we tailor our services to your unique needs, ensuring accuracy and adherence to the latest industry standards. With proactive strategies, we maximize your revenue by submitting clean claims and reducing denials.",
+        "Benefit from 24/7 web-based access and responsive client support, giving you real-time insight into your billing operations so you can confidently manage your revenue cycle and focus on exceptional patient care.",
       ]}
       buttonText="Let’s Connect"
       buttonLink="/contact"
-      badgeText="150+ Providers"
+      badgeText="Trusted by 150+ Providers"
       mainImage="/images/money-handoff.jpg"
       overlayImage="/images/coins-hand.jpg"
     />

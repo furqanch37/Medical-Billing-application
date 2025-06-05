@@ -4,15 +4,15 @@ import './PatientSchedulingBanner.css';
 
 const PatientSchedulingBanner = ({
   icon = '/assets/sub-services/23.png',
-  title = 'Looking for Top-Notch Patient Scheduling Services?',
-  subtitle = 'If you want affordable and expert patient scheduling services, reach out to us today and experience seamless, efficient scheduling solutions!',
+  title = 'Experience Seamless Patient Scheduling with CareWatch',
+  subtitle = 'Looking for reliable and affordable patient scheduling services? Connect with us today to streamline your appointment management and enhance patient satisfaction!',
   buttonText = "Let’s Connect ➞",
   onButtonClick = () => {},
 }) => {
   return (
     <div className="scheduling-banner">
       <div className="scheduling-icon">
-        <Image src={icon} alt="Scheduling Icon" width={48} height={48} />
+        <Image src={icon} alt="Patient Scheduling Icon" width={48} height={48} />
       </div>
       <div className="scheduling-content">
         <h3 className="scheduling-title">{title}</h3>

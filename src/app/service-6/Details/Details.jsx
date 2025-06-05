@@ -9,27 +9,29 @@ import PatientSchedulingBanner from '../patientScheduling/patientscheduling';
 import HomePage from '../MedicalBillingHighlight';
 import MedicalBillingFlow from '../MedicalBillingflow/MedicalBillingFlow';
 
-const denialManagementServices = {
-  category: 'Reimbursement Recovery',
-  title: 'Denial Prevention, Management & Appeals',
+const verificationAndPriorAuthServices = {
+  category: 'Verification of Benefits & Prior Authorization',
+  title: 'Streamlined Verification & Prior Authorization Services for Healthcare Providers',
   image: '/assets/doctors/service-5.jpg',
   description: [
-    `Denied claims represent lost revenue and increased administrative workload. Our Denial Prevention, Management, and Appeals service focuses on identifying, preventing, and resolving claim denials to maximize reimbursement and minimize revenue leakage.`,
+    `Verification of Benefits (VOB) and Prior Authorization (PA) are essential processes that ensure accurate insurance coverage verification and timely payer approvals, helping healthcare providers avoid costly claim denials and delays.`,
 
-    `We analyze denial trends to pinpoint root causes, such as coding errors, missing documentation, or payer policy changes. Our team works proactively to correct these issues before claim submission and to educate providers on best practices to reduce future denials.`,
+    `At CareWatch, our expert team meticulously collects patient and insurance information, verifies eligibility and benefits, and handles prior authorization submissions with precision. We reduce administrative burdens and protect your practice’s financial health by preventing payment disruptions and ensuring compliance.`,
 
-    `When denials do occur, we manage the entire appeals process—preparing thorough documentation, submitting appeals within payer timelines, and following up aggressively until resolution. Our proven strategies recover valuable revenue and improve your practice’s overall financial health.`,
+    `Our proactive follow-up and clear communication with providers and patients guarantee a seamless experience, allowing your team to focus on delivering outstanding patient care while we manage the complexities of insurance verification and authorization.`,
   ],
   servicesList: [
-    'Detailed Denial Analysis and Reporting',
-    'Appeals Preparation, Submission, and Follow-Up',
-    'Root Cause Identification and Corrective Actions',
-    'Payer Negotiations and Dispute Resolution',
+    'Comprehensive Patient Insurance Eligibility Verification',
+    'Detailed Benefits and Coverage Assessment',
+    'Accurate Prior Authorization Submission and Tracking',
+    'Regular Follow-Up with Payers to Expedite Approvals',
+    'Authorization Documentation and Compliance Management',
+    'Clear Communication with Providers and Patients',
   ],
 };
 
 export default function Details() {
-  const service = denialManagementServices;
+  const service = verificationAndPriorAuthServices;
 
   return (
     <div className="outpatient-container">
