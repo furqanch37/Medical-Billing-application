@@ -2,13 +2,13 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import './PatientSchedulingBanner.css';
-import HelpPopup from '@/app/Home/ContactPopup/ContactPopup'; // Adjust path if needed
+import HelpPopup from '@/app/Home/ContactPopup/ContactPopup';
 
 const PatientSchedulingBanner = ({
   icon = '/assets/sub-services/23.png',
-  title = 'Streamline Your Patient Scheduling with CareWatch',
-  subtitle = 'Deliver a better patient experience and reduce no-shows with our reliable, HIPAA-compliant scheduling services—customized for your workflow.',
-  buttonText = "Schedule a Free Demo ➞",
+  title = 'Get in Touch',
+  subtitle = 'Experience our top-notch revenue cycle services. You will be convinced when you witness the positive impact on your bottom line — Contact Us Today!',
+  buttonText = "Let's Connect ➞"
 }) => {
   const [showPopup, setShowPopup] = useState(false);
 

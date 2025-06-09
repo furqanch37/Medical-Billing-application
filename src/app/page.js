@@ -8,8 +8,8 @@ import AppointmentForm from './Home/AppointmentFAQ/AppointmentFAQ'
 import AppointmentEveryPage from './Home/AppointmentEveryPage/AppointmentEveryPage'
 import ThirdText from './Home/ThirdText/ThirdText'
 import Technologies from './Home/Technologies/Technologies'
-import FinancialSuccessSection from './Home/FinancialSuccess/FinancialSuccess'
-import BurgureBillingSection from './Home/Bargursection/burgurbilling'
+import FinancialSuccessSection from './Home/FinancialSuccess/FinancialSuccess/FinancialSuccess'
+import BurgureBillingSection from './Home/Bargursection/Bargursection/burgurbilling'
 
 const page = () => {
   return (

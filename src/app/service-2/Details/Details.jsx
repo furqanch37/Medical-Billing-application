@@ -11,7 +11,7 @@ const servicesDetails = [
   {
     category: 'Credentialing Services for Healthcare Providers',
     title: 'Effortless Medical Credentialing Services Built for Speed and Accuracy',
-    image: '/assets/doctors/service-1.jpg',
+    image: '/assets/doctors/service-2.jpg',
     description: [
       'At CareWatch, our Medical Credentialing Specialists bring years of experience supporting healthcare providers and facilities. We ensure full compliance with industry standards while eliminating errors and delays. Our transparent and efficient credentialing system accelerates the process, helping you see patients sooner and grow your practice with confidence.',
       'We handle the full credentialing lifecycle—from profile setup and document collection to insurance enrollment and contract finalization. Using secure cloud-based tools, our expert team manages every step and provides updates in real time. Our streamlined approach ensures faster approvals, better payer negotiations, and seamless onboarding.',

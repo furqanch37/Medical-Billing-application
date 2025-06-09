@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import './burger.css';
-import TeamImage from '../../../../public/team.png'; // Ensure this image is placed in the public folder
+import TeamImage from '../../../../../public/assets/team.png'; // Ensure this image is placed in the public folder
 
 export default function BurgureBillingSection() {
   return (

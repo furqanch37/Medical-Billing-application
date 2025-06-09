@@ -12,7 +12,7 @@ const servicesDetails = [
   {
    category: 'Verification of Benefits & Prior Authorization',
   title: 'Streamlined Verification & Prior Authorization Services for Healthcare Providers',
-  image: '/assets/doctors/service-5.jpg',
+  image: '/assets/services/one.jpg',
   description: [
     `Verification of Benefits (VOB) and Prior Authorization (PA) are essential processes that ensure accurate insurance coverage verification and timely payer approvals, helping healthcare providers avoid costly claim denials and delays.`,
 

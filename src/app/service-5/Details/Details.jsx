@@ -12,7 +12,7 @@ const servicesDetails = [
   {
     category: 'Medical Billing & Coding Audit',
     title: 'Gain Financial Clarity and Compliance Confidence with Expert Billing Audits',
-    image: '/assets/doctors/service-1.jpg',
+    image: '/assets/doctors/service-5.jpg',
     description: [
       `At CareWatch, our Medical Billing & Coding Audit services empower healthcare providers by uncovering hidden revenue gaps and ensuring compliance across your revenue cycle. We provide a thorough, data-driven review of your billing and coding processes to identify strengths, detect risks, and optimize financial performance.`,
       

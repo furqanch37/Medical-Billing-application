@@ -13,7 +13,7 @@ export default function Details() {
   const service = {
     category: 'Revenue Cycle Management',
     title: 'Revenue Cycle Management Services That Drive Real Financial Results',
-    image: '/assets/doctors/service-1.jpg', // Replace with your actual image path
+    image: '/assets/doctors/service-3.jpg', // Replace with your actual image path
     description: [
       `At CareWatch, we understand the daily revenue pressures facing healthcare professionals. Our Revenue Cycle Management (RCM) services are purpose-built to reduce denials, shorten AR cycles, and optimize claim turnaround time—without burdening your staff.`,
       `We offer a complete suite of RCM solutions, from insurance verification to denial recovery and AR follow-up. By combining certified coders with intelligent automation, we streamline your revenue process, improve reimbursement rates, and minimize costly billing errors.`,

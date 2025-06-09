@@ -12,7 +12,7 @@ const servicesDetails = [
   {
    category: 'Contact Center & Patient Scheduling',
   title: 'Practice Operations & Billing Workflow Support',
-  image: '/assets/doctors/service-1.jpg',
+  image: '/assets/home/one.jpg',
   description: [
     `At CareWatch, we know that efficient practice operations and optimized billing workflows are key to minimizing errors, boosting productivity, and elevating patient satisfaction. Our Practice Optimization services are customized to fit the unique needs of your healthcare organization.`,
 
