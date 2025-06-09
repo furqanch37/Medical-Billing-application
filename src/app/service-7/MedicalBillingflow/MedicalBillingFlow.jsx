@@ -1,7 +1,12 @@
+'use client';
 import Image from "next/image";
+import { useState } from "react";
+import HelpPopup from "@/app/Home/ContactPopup/ContactPopup"; // Adjust path if needed
 import "./MedicalBillingFlow.css";
 
 export default function MedicalBillingFlow() {
+  const [showPopup, setShowPopup] = useState(false);
+
   return (
     <section className="medical-billing-section">
       <h2 className="section-title">
@@ -22,9 +27,11 @@ export default function MedicalBillingFlow() {
             We actively monitor each claim’s progress, promptly addressing any discrepancies to prevent payment delays. From initial documentation through denial management, our process emphasizes transparency, compliance, and efficiency—helping healthcare providers get paid accurately and on time, while offering patients a clear, seamless billing experience.
           </p>
 
-          <button className="start-button">
+          <button className="start-button" onClick={() => setShowPopup(true)}>
             Let’s Get Started
           </button>
+
+          {showPopup && <HelpPopup onClose={() => setShowPopup(false)} />}
         </div>
 
         <div className="image-container">
@@ -38,5 +45,5 @@ export default function MedicalBillingFlow() {
         </div>
       </div>
     </section>
-    );
+  );
 }

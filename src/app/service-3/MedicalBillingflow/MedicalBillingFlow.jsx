@@ -1,9 +1,14 @@
+'use client';
 import Image from "next/image";
 import "./MedicalBillingFlow.css";
+import { useState } from "react";
+import HelpPopup from "@/app/Home/ContactPopup/ContactPopup";
 
 export default function MedicalBillingFlow() {
+  const [showPopup, setShowPopup] = useState(false);
+
   return (
-  <section className="medical-billing-section">
+    <section className="medical-billing-section">
       <h2 className="section-title">
         Our Streamlined Revenue Cycle Management Process for Maximum Financial Results
       </h2>
@@ -22,9 +27,11 @@ export default function MedicalBillingFlow() {
             Claims then go through rigorous scrubbing and are submitted securely to payers. Our team proactively tracks each claim, quickly resolving issues to maintain steady cash flow. From payment posting to denial management, every step is designed for transparency, compliance, and timely reimbursements.
           </p>
 
-          <button className="start-button">
+          <button className="start-button" onClick={() => setShowPopup(true)}>
             Let's Get Started
           </button>
+
+          {showPopup && <HelpPopup onClose={() => setShowPopup(false)} />}
         </div>
 
         <div className="image-container">
@@ -37,6 +44,6 @@ export default function MedicalBillingFlow() {
           />
         </div>
       </div>
-    </section> 
-   );
+    </section>
+  );
 }

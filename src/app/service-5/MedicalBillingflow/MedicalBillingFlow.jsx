@@ -1,9 +1,14 @@
+'use client';
 import Image from "next/image";
+import { useState } from "react";
+import HelpPopup from "@/app/Home/ContactPopup/ContactPopup"; // Adjust path if needed
 import "./MedicalBillingFlow.css";
 
 export default function MedicalBillingFlow() {
+  const [showPopup, setShowPopup] = useState(false);
+
   return (
-   <section className="medical-billing-section">
+    <section className="medical-billing-section">
       <h2 className="section-title">
         Our Streamlined Process to Maximize Your Medical Billing Success
       </h2>
@@ -22,9 +27,11 @@ export default function MedicalBillingFlow() {
             Claims are then thoroughly reviewed and scrubbed for errors before submission to payers via secure channels. Our proactive monitoring identifies and resolves discrepancies swiftly to keep your cash flow steady. From initial documentation to efficient denial management, CareWatch is committed to transparency, compliance, and getting you paid promptly.
           </p>
 
-          <button className="start-button">
+          <button className="start-button" onClick={() => setShowPopup(true)}>
             Let’s Get Started
           </button>
+
+          {showPopup && <HelpPopup onClose={() => setShowPopup(false)} />}
         </div>
 
         <div className="image-container">
@@ -37,5 +44,6 @@ export default function MedicalBillingFlow() {
           />
         </div>
       </div>
-    </section>);
+    </section>
+  );
 }
